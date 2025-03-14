@@ -77,16 +77,13 @@ const Main = () => {
   </table>
 </div>
 
-
-
-
       {/* Add New Admin Button */}
       <div className="mt-6 flex justify-center items-end">
-  <button className="bg-blue-500 text-white px-8 py-3 rounded-full hover:bg-blue-600 inline-flex items-center gap-2 text-lg font-extrabold shadow-md transform hover:scale-105 transition-transform">
-    <UserPlus size={22} />
-    Add New Admin
-  </button>
-</div>
+        <button className="bg-blue-500 text-white px-8 py-3 rounded-full hover:bg-blue-600 inline-flex items-center gap-2 text-lg font-extrabold shadow-md transform hover:scale-105 transition-transform">
+        <UserPlus size={22} />
+                Add New Admin
+        </button>
+    </div>
     </div>
       </main>
   );
