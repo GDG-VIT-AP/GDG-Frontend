@@ -1,7 +1,7 @@
 import React from 'react';
 import gdgLogo from '../assets/gdg.jpg';
-import facebook from '../assets/facebook.png';
-import instagram from '../assets/instagram.png';
+import facebook from '../assets/facebook.svg';
+import instagram from '../assets/instagram.svg';
 
 const Footer = () => {
   return (
