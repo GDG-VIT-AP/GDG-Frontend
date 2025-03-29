@@ -1,13 +1,9 @@
-import './App.css'
+import './styles/App.css'
+import FeedbackPage from "./pages/feedback-page/FeedbackPage.jsx"
 
 function App() {
-  return (
-    <>
-  <h1 class="text-4xl font-bold underline">
-    Nothing here yet!
-  </h1>
-    </>
-  )
+  return <FeedbackPage />;
 }
 
-export default App
+export default App;
+
