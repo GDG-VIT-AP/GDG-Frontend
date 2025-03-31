@@ -11,6 +11,22 @@ function Signup(props) {
   const [showPassword, setShowPassword] = useState(false);
   const [showRepassword, setShowRepassword] = useState(false);
 
+  function checkZoom() {
+    const zoomLevel = Math.round((window.devicePixelRatio || 1) * 100);
+    const elements = document.querySelectorAll('.hide-on-zoom');
+  
+    if (zoomLevel > 130) {
+      elements.forEach(el => el.style.display = 'none');
+    } else {
+      elements.forEach(el => el.style.display = 'block');
+    }
+  }
+  
+  window.addEventListener('resize', checkZoom);
+  checkZoom();
+  
+
+
   return (
     <div className="min-h-screen flex items-center justify-center p-4 md:p-6 lg:p-8">
       <div className="bg-white rounded-xl overflow-hidden max-w-4xl border-black border-2 w-full flex flex-col md:flex-row">
@@ -115,22 +131,19 @@ function Signup(props) {
             </button>
           </div>
           </div>
-
-          {/* Right Design element */}
-        
-               <img
-                 src={Design_elements_right}
-                 alt="Design Elements"
-                 className="hidden lg:block absolute bottom-[80px] -right-1 w-[25%]"
-               />
-
-               {/* Left Design Element */}
-               <img
-                 src={Design_elements_left}
-                 alt="Design Elements"
-                 className="hidden lg:block absolute bottom-[60px] right-[910px] w-[25%]"
-               />
-        
+  {/* Right Design Element*/}
+   <img
+        src={Design_elements_right}
+        alt="Design Elements"
+        className="hidden lg:block xl:block sm:hidden md:hidden hide-on-zoom hide-on-nest-hub absolute bottom-[80px] -right-[3px] w-[25%]"
+      />
+  
+{/* Left Design Element */}
+    <img
+      src={Design_elements_left}
+      alt="Design Elements"
+      className="hidden lg:block xl:block sm:hidden md:hidden hide-on-zoom hide-on-nest-hub absolute bottom-[60px] left-[0px] w-[25%]"
+    />
             
           <div className="hidden md:flex md:w-1/2 relative items-center justify-center">
          

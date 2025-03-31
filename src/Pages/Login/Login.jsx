@@ -9,6 +9,20 @@ import Sign_with_google from "file:///C:/Users/asati/GDG-Frontend/src/assets/sig
 
 function Login(props) {
   const [showPassword, setShowPassword] = useState(false);
+  function checkZoom() {
+    const zoomLevel = Math.round((window.devicePixelRatio || 1) * 100);
+    const elements = document.querySelectorAll('.hide-on-zoom');
+  
+    if (zoomLevel > 130) {
+      elements.forEach(el => el.style.display = 'none');
+    } else {
+      elements.forEach(el => el.style.display = 'block');
+    }
+  }
+  
+  window.addEventListener('resize', checkZoom);
+  checkZoom();
+  
 
   return (
     
@@ -89,15 +103,16 @@ function Login(props) {
     <img
       src={Design_elements_right}
       alt="Design Elements"
-      className="hidden lg:block absolute bottom-[80px] -right-1 w-[25%]"
+      className="hidden lg:block xl:block sm:hidden md:hidden hide-on-zoom hide-on-nest-hub absolute bottom-[80px] -right-[3px] w-[25%]"
     />
 
-    {/* Left Design Element */}
+{/* Left Design Element */}
     <img
       src={Design_elements_left}
       alt="Design Elements"
-      className="hidden lg:block absolute bottom-[60px] right-[910px] w-[25%]"
+      className="hidden lg:block xl:block sm:hidden md:hidden hide-on-zoom hide-on-nest-hub absolute bottom-[60px] left-[0px] w-[25%]"
     />
+
 
     {/* Right Column - Logo and Decorative Elements */}
     <div className="hidden md:flex md:w-1/2 relative">
