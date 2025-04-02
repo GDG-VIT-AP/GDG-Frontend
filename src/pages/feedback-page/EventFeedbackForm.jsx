@@ -37,11 +37,16 @@ const EventFeedbackForm = () => {
     );
   };
 
+  // Check if rating has a value
+  const isRated = (rating) => rating > 0;
+
+  // Get all ratings in array
+  const getRatings = () => [contentRating, speakerRating, venueRating];
+
   // Calculate progress percentage based on completed ratings
   const calculateProgress = () => {
-    const totalQuestions = 3;
-    const answeredQuestions = [contentRating, speakerRating, venueRating].filter(rating => rating > 0).length;
-    return (answeredQuestions / totalQuestions) * 100;
+    const ratings = getRatings();
+    return (ratings.filter(rating => rating > 0).length / ratings.length) * 100;
   };
 
   return (
@@ -50,7 +55,7 @@ const EventFeedbackForm = () => {
         <h1 className="text-4xl font-bold mb-2">Feedback Section</h1>
         <h2 className="text-2xl mb-6">Event Name</h2>
         
-        {/* Progress bar */}
+        {/* Progress bar using calculateProgress function */}
         <div className="w-full bg-gray-200 rounded-full h-4 mb-6">
           <div 
             className="bg-blue-500 h-4 rounded-full" 
