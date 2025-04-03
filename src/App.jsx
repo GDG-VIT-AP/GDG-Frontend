@@ -12,6 +12,8 @@ import Footer from './components/Fotter';
 function App() {
   const count=3;
   const [getPastEvents,setPastEvents]= useState(true)
+  const [searchQuery, setSearchQuery] = useState(""); // ✅ State for search query
+
 function toggleEvents(toggle){
 setPastEvents(toggle)
 }
@@ -19,7 +21,7 @@ setPastEvents(toggle)
     <div className='total flex  flex-col justify-center items-center gap-4'>
       {/*events text */}
       <div 
-        className="font-bold text-[#000000] text-[48px] absolute top-[140px] left-[646px] z-[-1]" // Adjust size and position
+        className="font-bold text-[#000000] text-[48px] flex flex-row items-center mt-[130px]" // Adjust size and position
         style={{ 
         
           backgroundSize: "contain", // ✅ Ensures full image is visible
@@ -45,7 +47,7 @@ setPastEvents(toggle)
         }}>
       </div>
       <div 
-        className="h-[225px] w-[714px] absolute top-[1.5px] left-[369px] z-[-1]" // Adjust size and position
+        className="h-[225px] w-[714px] absolute top-[1.5px] left-[369px] max-xl:left-[250px] z-[-1]" // Adjust size and position
         style={{ 
           backgroundImage: `url(${RedDot})`, 
           backgroundSize: "cover", // ✅ Ensures full image is visible
@@ -53,7 +55,7 @@ setPastEvents(toggle)
         }}>
       </div>
       <div 
-        className="h-[62.5px] w-[267.65px] absolute top-[127.5px] left-[368.5px] z-[-1]" // Adjust size and position
+        className="h-[62.5px] w-[267.65px] absolute top-[127.5px] left-[368.5px] max-xl:left-[250px] z-[-1]" // Adjust size and position
         style={{ 
           backgroundImage: `url(${GreenDot})`, 
           backgroundSize: "cover", // ✅ Ensures full image is visible
@@ -71,9 +73,10 @@ setPastEvents(toggle)
 }
 
      
-       <Search/>
+       <Search onSearch={setSearchQuery}/>
       <ToggleEvents toggle={toggleEvents}/>
-      <EventList events={getPastEvents}/>
+        {/* ✅ Pass searchQuery to EventList Component */}
+      <EventList events={getPastEvents} searchQuery={searchQuery} />
       <Footer/>
 
       </div>

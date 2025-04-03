@@ -4,7 +4,7 @@ const ToggleEvents = (props) => {
   const [activeTab, setActiveTab] = useState("past");
 
   return (
-    <div className="flex bg-[#F6F9FF] rounded-full w-[1087px] h-[63px] p-1 border-[2px] border-black mb-[20px]">
+    <div className="flex bg-[#F6F9FF] rounded-full w-[1087px] h-[63px] max-xl:w-[980px] max-lg:w-[800px] max-md:w-[600px] max-sm:w-[500px] p-1 border-[2px] border-black mb-[20px]">
       <button
         className={`flex-1 py-2 rounded-full  text-center font-semibold ${
           activeTab === "upcoming"
