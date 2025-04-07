@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 function Profile({ user }) {
-  // Use a default avatar if no user avatar is provided
+  
   const defaultAvatar = "";
   const avatar = user && user.avatar ? user.avatar : defaultAvatar;
 

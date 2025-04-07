@@ -29,6 +29,18 @@ body {
       height: auto;
       margin: auto;
     }
+    
   }
   
-  
+ .password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;  /* Adjust as needed */
+    transform: translateY(-50%);
+    z-index: 20 !important; /* Make sure it stays above the input field */
+    cursor: pointer;
+}
+
+.parent-container {
+  overflow: visible; /* Allows elements to extend beyond their container */
+}

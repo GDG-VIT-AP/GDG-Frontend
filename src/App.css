@@ -33,3 +33,28 @@
     margin: auto;
   }
 }
+.password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 10px;  /* Adjust as needed */
+  transform: translateY(-50%);
+  z-index: 20 !important; /* Make sure it stays above the input field */
+  cursor: pointer;
+}
+
+.parent-container {
+  overflow: visible; /* Allows elements to extend beyond their container */
+}
+
+@media screen and (min-width: 1280px) and (max-height: 800px) {
+    .design-elements {
+        display: none !important;
+    }
+}
+
+
+@media screen and (min-width: 1024px) and (max-height: 600px) {
+  .design-elements {
+      display: none !important;
+  }
+}

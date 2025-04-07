@@ -1,28 +1,39 @@
 import React, { useState } from 'react';
 import { useLocation, NavLink } from 'react-router-dom';
-import google_developers_group from "file:///C:/Users/asati/GDG-Frontend/src/assets/Google_developrs_header.svg";
-import ProfilePhoto from "../../Pages/ProfilePhoto/Profile"; // Adjust the path as needed
+import google_developers_group from "../../assets/Elements/Google_developrs_header.svg";
+import ProfilePhoto from "../../Pages/ProfilePhoto/Profile"; 
 
 function NavBar(props) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
 
-  // Determine button text and its link based on current page.
-  let buttonText = "Login";
-  let buttonLink = "/";
+   {/* Determine button text and its link based on current page. */}
+  let buttonText = location.pathname === "/" ? "Signup" : "Login";
+  let buttonLink = location.pathname === "/" ? "/Signup" : "/";
 
-  if (location.pathname === "/") {
-    buttonText = "Signup";
-    buttonLink = "/Signup";
-  } else if (location.pathname === "/signup") {
-    buttonText = "Login";
-    buttonLink = "/";
-  }
-
-  // Dummy user object. In a real scenario, replace with your user state.
+   {/* Profile picture*/}
   const user = {
     name: "",
     avatar: ""
+  };
+
+  {/* All Links */}
+  const renderNavLinks = () => {
+    const navLinks = [
+      { path: "/Home", label: "Home" },
+      { path: "/about", label: "About us" },
+      { path: "/events", label: "Events" },
+      { path: "/project", label: "Project" },
+      { path: "/team", label: "Our Team" }
+    ];
+
+    return navLinks.map((link, index) => (
+      <li key={index}>
+        <NavLink to={link.path} className="hover:text-blue-500 md:text-xl">
+          {link.label}
+        </NavLink>
+      </li>
+    ));
   };
 
   return (
@@ -47,37 +58,10 @@ function NavBar(props) {
           </button>
         </div>
 
-        {/*Navigation */}
+        {/* Navigation */}
         <div className="hidden md:flex ml-auto items-center gap-4">
           <ul className="flex space-x-8 text-md font-medium">
-            <li>
-              <NavLink
-                to="/Home"
-                className="hover:text-blue-500 md:text-xl font-[PT Sans]"
-              >
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/about" className="hover:text-blue-500 md:text-xl">
-                About us
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/events" className="hover:text-blue-500 md:text-xl">
-                Events
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/project" className="hover:text-blue-500 md:text-xl">
-                Project
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/team" className="hover:text-blue-500 md:text-xl">
-                Our Team
-              </NavLink>
-            </li>
+            {renderNavLinks()} {/* Dynamic function renders links*/}
           </ul>
           <NavLink
             to={buttonLink}
@@ -85,7 +69,9 @@ function NavBar(props) {
           >
             {buttonText}
           </NavLink>
-          {/* Profile Section, to the right of the Login/Signup button */}
+
+          {/* Profile Section */}
+
           <ProfilePhoto user={user} />
         </div>
       </nav>
@@ -97,7 +83,8 @@ function NavBar(props) {
         } transition-transform duration-300 ease-in-out md:hidden`}
       >
         <div className="p-4">
-          {/* Close Button */}
+
+          {/* Close Button for sidebar */}
           <button
             onClick={() => setIsMenuOpen(false)}
             className="text-gray-600 text-2xl mb-4"
@@ -106,51 +93,7 @@ function NavBar(props) {
             &times;
           </button>
           <ul className="flex flex-col space-y-4 text-md font-medium">
-            <li>
-              <NavLink
-                onClick={() => setIsMenuOpen(false)}
-                to="/Home"
-                className="hover:text-blue-500"
-              >
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                onClick={() => setIsMenuOpen(false)}
-                to="/about"
-                className="hover:text-blue-500"
-              >
-                About us
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                onClick={() => setIsMenuOpen(false)}
-                to="/events"
-                className="hover:text-blue-500"
-              >
-                Events
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                onClick={() => setIsMenuOpen(false)}
-                to="/project"
-                className="hover:text-blue-500"
-              >
-                Project
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                onClick={() => setIsMenuOpen(false)}
-                to="/team"
-                className="hover:text-blue-500"
-              >
-                Our Team
-              </NavLink>
-            </li>
+            {renderNavLinks()} {/* Dynamic function renders links*/}
             <li>
               <NavLink
                 onClick={() => setIsMenuOpen(false)}
@@ -164,7 +107,8 @@ function NavBar(props) {
         </div>
       </div>
 
-      
+       {/* Menu Opening */}
+
       {isMenuOpen && (
         <div
           className="fixed inset-0 bg-black opacity-50 z-40 md:hidden"
