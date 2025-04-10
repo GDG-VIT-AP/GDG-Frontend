@@ -1,3 +1,4 @@
+{/*to display the background images(clouds and lines) */}
 import React from 'react'
 import cloud2 from '../assets/cloud2.png';
 import cloud3 from '../assets/cloud3.png';
@@ -10,7 +11,7 @@ import GreenDot from '../assets/GreenDot.png'
     <>
           {/*events text */}
           <div 
-        className="font-bold text-[#000000] text-[48px] flex flex-row items-center mt-[130px]" // Adjust size and position
+        className="eventsText font-bold text-[#000000] text-[48px] flex flex-row items-center mt-[130px]" // Adjust size and position
         style={{ 
         
           backgroundSize: "contain", // ✅ Ensures full image is visible
@@ -18,7 +19,7 @@ import GreenDot from '../assets/GreenDot.png'
         }}>
           Events
       </div>
-      {/* Left Cloud */}
+      {/* Left Cloud in the page */}
       <div 
         className="h-[225px] w-[240px] absolute top-[116px] left-2 z-[-1]" // Adjust size and position
         style={{ 
@@ -51,6 +52,7 @@ import GreenDot from '../assets/GreenDot.png'
           backgroundRepeat: "no-repeat" 
         }}>
       </div>
+      {/* make paaear the cloud after more number of  event cards appear*/ }
     { count>4 && <div 
         className="h-[134.38px] w-[257.36px] absolute top-[1518px] left-[0px] z-[-1]" // Adjust size and position
         style={{ 

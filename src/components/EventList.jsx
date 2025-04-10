@@ -1,3 +1,13 @@
+// EventList.jsx
+// ---------------------------------------------------
+// This component fetches and displays a list of events (past or upcoming).
+// It also filters the events based on a search query.
+//
+// Props:
+//   - events: boolean (true for past events, false for upcoming events)
+//   - searchQuery: string to filter the event titles
+// ---------------------------------------------------
+
 import React, { useEffect, useState } from "react";
 import EventCard from "./EventCard";
 
@@ -36,16 +46,17 @@ function EventList({ events, searchQuery }) {
   const filteredEvents = eventList.filter((event) =>
     event.title.toLowerCase().includes(searchQuery.toLowerCase())
   );
-  
 
   return (
-    <div className="event-list flex flex-col gap-6">
+    <div className="EventListContainer flex flex-col gap-6">
       {filteredEvents.length > 0 ? (
         filteredEvents.map((event) => (
           <EventCard key={event.eventID} event={event} />
         ))
       ) : (
-        <p className="text-center font-bold text-lg">No Events Found</p>
+        <p className="NoEventsMessage text-center font-bold text-lg">
+          No Events Found
+        </p>
       )}
     </div>
   );
