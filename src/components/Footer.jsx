@@ -1,3 +1,8 @@
+/**
+ * Purpose: Provides site-wide footer with credits and important links.
+ * It appears at the bottom of every page for a consistent user experience.
+ * Contributor: T K Sesha Sathvik 23BCE9627
+ */
 import React from 'react';
 import gdgLogo from '../assets/gdg.jpg';
 import facebook from '../assets/facebook.svg';

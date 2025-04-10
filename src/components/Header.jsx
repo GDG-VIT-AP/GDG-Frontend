@@ -1,3 +1,8 @@
+/**
+ * Purpose: Displays the top navigation bar with brand logo and links to pages. 
+ * It provides quick access to core sections of the website.
+ * Contributor: T K Sesha Sathvik 23BCE9627
+ */
 import React from 'react';
 import { Menu } from 'lucide-react';
 import gdgLogo from '../assets/gdg.jpg';
