@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Page</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('src/assets/Project_page/gdg_bg.png') no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header */
+        header {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        .navigation {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .navigation a {
+            margin: 0 10px;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Page Title */
+        .page-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        /* Image below title */
+        .title-image {
+            display: block;
+            margin: 10px auto;
+            width: 40%;
+        }
+
+        /* Category & Search Section */
+        .search-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown button {
+            background-color: #4285F4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Search Bar */
+        .search-bar input {
+            width: 80%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        /* Project Tabs */
+        .tabs {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #ccc;
+            border-radius: 5px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .tab.active {
+            background-color: #6200ea;
+            color: white;
+        }
+
+        /* Project Sections */
+        .project-section {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .project-section.active {
+            display: flex;
+        }
+
+        .project-card {
+            display: flex;
+            align-items: center;
+            background: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            width: 80%;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .project-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            margin-right: 15px;
+        }
+
+        .project-content h2 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .project-content p {
+            margin: 5px 0;
+            color: #555;
+        }
+
+        /* Footer */
+        footer {
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: auto;
+        }
+
+        .footer-logo img {
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="src\assets\Project_page\gdg_logo.png" alt="Google Developer Groups Logo">
+    </div>
+    <div class="navigation">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Events</a>
+        <a href="#">Projects</a>
+        <a href="#">Our Team</a>
+    </div>
+</header>
+
+<!-- Page Title -->
+<h1 class="page-title">Projects</h1>
+
+<!-- Image Below Title -->
+<img src="C:\Users\ASUS\GDG-Frontend\src\assets\Project_page\Project thumbnail.png" alt="Projects Banner" class="title-image">
+
+<!-- Categories Dropdown & Search Bar -->
+<div class="search-container">
+    <div class="dropdown">
+        <button>Categories</button>
+        <div class="dropdown-content">
+            <a href="#">Web Development</a>
+            <a href="#">Mobile Apps</a>
+            <a href="#">AI & ML</a>
+            <a href="#">Cloud Computing</a>
+        </div>
+    </div>
+    <div class="search-bar">
+        <input type="text" id="search" placeholder="Search projects..." onkeyup="searchProjects()">
+    </div>
+</div>
+
+<!-- Project Tabs -->
+<div class="tabs">
+    <div id="tab-upcoming" class="tab active" onclick="showProjects('upcoming-projects')">Upcoming Projects</div>
+    <div id="tab-completed" class="tab" onclick="showProjects('completed-projects')">Completed Projects</div>
+</div>
+
+<!-- Upcoming Projects -->
+<div id="upcoming-projects" class="project-section active">
+    <div class="project-card">
+        <img src="src\assets\Project_page\Project thumbnail.png" alt="Project Image">
+        <div class="project-content">
+            <h2>Project Title</h2>
+            <p>Description of Upcoming Project 1</p>
+        </div>
+    </div>
+    <div class="project-card">
+        <img src="C:\Users\ASUS\GDG-Frontend\src\assets\Project_page\Project thumbnail.png" alt="Project Image">
+        <div class="project-content">
+            <h2>Project Title</h2>
+            <p>Description of Upcoming Project 1</p>
+        </div>
+    </div>
+    <div class="project-card">
+        <img src="src\assets\Project_page\Project thumbnail.png" alt="Project Image">
+        <div class="project-content">
+            <h2>Project Title</h2>
+            <p>Description of Upcoming Project 1</p>
+        </div>
+    </div>
+    <div class="project-card">
+        <img src="src\assets\Project_page\Project thumbnail.png" alt="Project Image">
+        <div class="project-content">
+            <h2>Project Title</h2>
+            <p>Description of Upcoming Project 1</p>
+        </div>
+    </div>
+    <div class="project-card">
+        <img src="src\assets\Project_page\Project thumbnail.png" alt="Project Image">
+        <div class="project-content">
+            <h2>Project Title</h2>
+            <p>Description of Upcoming Project 1</p>
+        </div>
+    </div>
+</div>
+
+<!-- Completed Projects -->
+<div id="completed-projects" class="project-section">
+    <div class="project-card">
+        <img src="src\assets\Project_page\Project thumbnail.png" alt="Project Image">
+        <div class="project-content">
+            <h2>Project Title</h2>
+            <p>Description of Completed Project 1</p>
+        </div>
+    </div>
+    <div class="project-card">
+        <img src="src\assets\Project_page\Project thumbnail.png" alt="Project Image">
+        <div class="project-content">
+            <h2>Project Title</h2>
+            <p>Description of Completed Project 1</p>
+        </div>
+    </div>
+    <div class="project-card">
+        <img src="src\assets\Project_page\Project thumbnail.png" alt="Project Image">
+        <div class="project-content">
+            <h2>Project Title</h2>
+            <p>Description of Completed Project 1</p>
+        </div>
+    </div>
+    <div class="project-card">
+        <img src="src\assets\Project_page\Project thumbnail.png" alt="Project Image">
+        <div class="project-content">
+            <h2>Project Title</h2>
+            <p>Description of Completed Project 1</p>
+        </div>
+    </div>
+    <div class="project-card">
+        <img src="src\assets\Project_page\Project thumbnail.png" alt="Project Image">
+        <div class="project-content">
+            <h2>Project Title</h2>
+            <p>Description of Completed Project 1</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-logo">
+        <img src="src\assets\Project_page\gdg_logo.png" alt="GDG Logo">
+    </div>
+    <p>&copy; 2025 Google Developer Group</p>
+</footer>
+
+<style>
+    .project-content p {
+        display: none; /* Initially hidden */
+        margin-top: 5px;
+    }
+
+    .project-card.active p {
+        display: block; /* Show when active */
+    }
+</style>
+
+<script>
+    function showProjects(type) {
+        document.querySelectorAll(".project-section").forEach(sec => sec.classList.remove("active"));
+        document.getElementById(type).classList.add("active");
+
+        document.querySelectorAll(".tab").forEach(tab => tab.classList.remove("active"));
+        document.getElementById(type === "upcoming-projects" ? "tab-upcoming" : "tab-completed").classList.add("active");
+    }
+
+    function searchProjects() {
+        let input = document.getElementById("search").value.toLowerCase();
+        document.querySelectorAll(".project-card").forEach(project => {
+            project.style.display = project.querySelector("h2").innerText.toLowerCase().includes(input) ? "flex" : "none";
+        });
+    }
+
+    document.querySelectorAll(".project-card").forEach(card => {
+        card.addEventListener("click", function() {
+            this.classList.toggle("active"); // Toggle active class to show/hide description
+        });
+    });
+</script>
+
+
+</body>
+</html>
