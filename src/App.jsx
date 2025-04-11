@@ -1,17 +1,16 @@
 import React from 'react';
 import Header from './components/Header';
-import Main from './components/Adminpage';
+import AdminPage from './Pages/Adminpage';
 import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
-      <Main />
+      <AdminPage />
       <Footer />
     </div>
   );
 }
 
 export default App;
-
