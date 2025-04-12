@@ -1,5 +1,4 @@
-// EventList.jsx
-// ---------------------------------------------------
+//purpose of the file:
 // This component fetches and displays a list of events (past or upcoming).
 // It also filters the events based on a search query.
 //
@@ -7,6 +6,7 @@
 //   - events: boolean (true for past events, false for upcoming events)
 //   - searchQuery: string to filter the event titles
 // ---------------------------------------------------
+//contributor: G.Lokesh(23BCE9813)
 
 import React, { useEffect, useState } from "react";
 import EventCard from "./EventCard";

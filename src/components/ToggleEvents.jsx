@@ -1,5 +1,4 @@
-// ToggleEvents.jsx
-// ---------------------------------------------------
+//purpose of the file:
 // This component renders two toggle buttons: "Upcoming Events" and "Past Events".
 // Clicking a button highlights it and triggers the `toggle` function from props
 // to inform the parent component which type of events to show.
@@ -9,6 +8,7 @@
 //             true => show past events
 //             false => show upcoming events
 // ---------------------------------------------------
+//contributor: G.Lokesh(23BCE9813)
 
 import { useState } from "react";
 

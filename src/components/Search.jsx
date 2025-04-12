@@ -1,4 +1,4 @@
-// Search.jsx
+// purpose of the file:
 // -----------------------------------------------
 // This component renders a styled search bar with a hamburger icon on the left
 // and a search icon on the right. It captures user input and calls the
@@ -6,7 +6,8 @@
 //
 // Props:
 //   - onSearch: function to handle the search query when triggered
-// -----------------------------------------------
+// ---------------------------------------------------
+//contributor: G.Lokesh(23BCE9813)
 
 import { useState } from "react";
 import Hamburger from "../assets/Hamburger.png"; // Hamburger menu icon

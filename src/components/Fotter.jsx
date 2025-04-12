@@ -1,5 +1,7 @@
-// Footer.jsx
+// purpose of the file:
 // Footer component of the webpage
+// ---------------------------------------------------
+//contributor: G.Lokesh(23BCE9813)
 
 import facebook from '../assets/facebook-icon.svg';
 import Instagram from '../assets/Instagram-icon.png';

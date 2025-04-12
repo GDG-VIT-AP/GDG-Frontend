@@ -1,7 +1,8 @@
-// EventCard.jsx
-// This component displays an event card with an event image, title, description, date, time, and participant rating.
+//purpose of the file:
+// This component displays an event card with an event image, title, description, date, time, and event  rating.
 // It has animation effects for card appearance and count update, and responsive behavior for different screen sizes.
-
+// ---------------------------------------------------
+//contributor: G.Lokesh(23BCE9813)
 import React, { useEffect, useState } from "react";
 import vector from '../assets/vector.png';
 import rectangle from '../assets/Rectangle.png';
