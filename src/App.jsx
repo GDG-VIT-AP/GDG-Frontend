@@ -1,12 +1,16 @@
 import './App.css'
+import { EventsPage } from './pages/EventsPageMerge'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 
 function App() {
   return (
-    <>
-  <h1 class="text-4xl font-bold underline">
-    Nothing here yet!
-  </h1>
-    </>
+    <BrowserRouter>
+      <Routes>
+        {/* <Route path="/" element={<Home />} /> */}
+        <Route path="/event/:id" element={<EventsPage />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
