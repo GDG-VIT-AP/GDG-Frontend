@@ -1,6 +1,47 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+/* ✅ Smooth Slide-in from LEFT (for Past Events) */
+.animate-card-appear {
+    animation: slide-in-left 0.7s ease-in-out;
+  }
+  
+  /* ✅ Smooth Slide-in from RIGHT (for Upcoming Events) */
+  .animate-card-appear-upcoming {
+    animation: slide-in-right 0.7s ease-in-out;
+  }
+  
+  /* ✅ Bounce Effect for Counter */
+  .animate-bounce {
+    animation: bounce 0.6s ease-in-out;
+  }
+  
+  /* ✅ Slide-in from Left without any Background Bar */
+  @keyframes slide-in-left {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* ✅ Slide-in from Right without any Background Bar */
+  @keyframes slide-in-right {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* ✅ Bounce Effect for Counter */
+
 @custom-variant dark (&:is(.dark *));
 
 @theme {
