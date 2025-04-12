@@ -1,4 +1,67 @@
+/* Purpose : Global styles for the entire application, including basic resets and theme settings 
+    Contributor : Daksh asati(REG: 23BEC7195) */
+
+
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* body {
+    @apply font-product;
+  } */
+
+
+  @media screen and (width: 1024px) and (height: 600px) {
+    .hide-on-nest-hub {
+      display: none;
+    }
+  }
+
+  @media screen and (width: 1280px) and (height: 800px) {
+    .hide-on-nest-hub-max {
+      display: none;
+    }
+  }
+  
+  /* CSS to Hide Design Elements at Zoom > 125% */
+@media (min-resolution: 120dpi) and (min-width: 1280px) {
+  .hide-on-zoom {
+    display: none;
+  }
+}
+
+@media (max-width: 912px) and (max-height: 1368px) {
+  .footer-icons {
+    width: auto;
+    height: auto;
+    margin: auto;
+  }
+}
+.password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 10px;  /* Adjust as needed */
+  transform: translateY(-50%);
+  z-index: 20 !important; /* Make sure it stays above the input field */
+  cursor: pointer;
+}
+
+.parent-container {
+  overflow: visible; /* Allows elements to extend beyond their container */
+}
+
+@media screen and (min-width: 1280px) and (max-height: 800px) {
+    .design-elements {
+        display: none !important;
+    }
+}
+
+
+@media screen and (min-width: 1024px) and (max-height: 600px) {
+  .design-elements {
+      display: none !important;
+  }
+}
+
 @import "tw-animate-css";
 
 /* ✅ Smooth Slide-in from LEFT (for Past Events) */
