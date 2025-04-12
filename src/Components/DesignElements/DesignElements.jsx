@@ -1,3 +1,7 @@
+{/* Purpose : Integrating left and right design element on every page 
+    Contributor : Daksh asati(REG: 23BEC7195) */}
+
+
 import React, { useMemo } from "react";
 import Design_elements_right from "../../assets/Elements/Design_elements-right.svg";
 import Design_elements_left from "../../assets/Elements/Design_elements-left.svg";

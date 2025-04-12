@@ -1,3 +1,8 @@
+{/* Purpose : Allows new users to register an account by entering their details. 
+    Contributor : Daksh asati(REG: 23BEC7195) */}
+
+
+
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import InputField from "../../Components/InputField/InputField.jsx";

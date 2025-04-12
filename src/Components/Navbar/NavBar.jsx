@@ -1,3 +1,8 @@
+{/* Purpose : Displays important website links, GDG logo contact information on top of website 
+    Contributor : Daksh asati(REG: 23BEC7195) */}
+
+
+
 import React, { useState } from 'react';
 import { useLocation, NavLink } from 'react-router-dom';
 import google_developers_group from "../../assets/Elements/Google_developrs_header.svg";

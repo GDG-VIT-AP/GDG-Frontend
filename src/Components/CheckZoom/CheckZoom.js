@@ -1,3 +1,8 @@
+{/* Purpose : Handles zoom for design elements(right and left) on each page(specially for responsivness)
+    Contributor : Daksh asati(REG: 23BEC7195) */}
+
+
+
 export function checkZoom() {
     const zoomLevel = Math.round((window.devicePixelRatio || 1) * 100);
     const elements = document.querySelectorAll('.hide-on-zoom');

@@ -1,3 +1,7 @@
+{/* Purpose : A reusable input fields component for handling user input across forms.
+    Contributor : Daksh asati(REG: 23BEC7195) */}
+
+
 import React from 'react';
 
 function InputField({ label, type = "text", id, placeholder, value, onChange }) {

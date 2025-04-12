@@ -1,3 +1,7 @@
+{/* Purpose : This component dynamically generates footer links based on props
+    Contributor : Daksh asati(REG: 23BEC7195) */}
+
+
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 

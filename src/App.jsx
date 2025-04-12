@@ -1,3 +1,8 @@
+{/* Purpose : Serves as the main entry point of the application, handling routing and layout structure.
+    Contributor : Daksh asati(REG: 23BEC7195) */}
+
+
+
 import { Routes, Route } from "react-router-dom";
 import Login from "./Pages/Login/Login.jsx";
 import Signup from "./Pages/Signup/Signup.jsx";

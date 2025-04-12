@@ -1,3 +1,8 @@
+{/* Purpose : Displays important  links, contact information, and social media links.
+    Contributor : Daksh asati(REG: 23BEC7195) */}
+
+
+
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import FooterLinks from "../FooterLink/FooterLink.jsx"; 

@@ -1,3 +1,7 @@
+{/* Purpose : Displays user profile Photo.
+    Contributor : Daksh asati(REG: 23BEC7195) */}
+
+
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 

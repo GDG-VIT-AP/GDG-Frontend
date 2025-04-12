@@ -1,3 +1,7 @@
+{/* Purpose : Handles user authentication for login. Accepts user credentials. 
+    Contributor : Daksh asati(REG: 23BEC7195) */}
+
+
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import InputField from "../../Components/InputField/InputField.jsx"; 

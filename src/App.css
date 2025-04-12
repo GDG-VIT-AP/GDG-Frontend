@@ -1,3 +1,7 @@
+/* Purpose : Global styles for the entire application, including basic resets and theme settings 
+    Contributor : Daksh asati(REG: 23BEC7195) */
+
+
 @import "tailwindcss";
 
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');

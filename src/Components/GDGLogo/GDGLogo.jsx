@@ -1,3 +1,7 @@
+{/* Purpose : Displays the GDG Logo component used across the application. 
+    Contributor : Daksh asati(REG: 23BEC7195) */}
+
+
 import React from 'react';
 import GDG_Logo from "../../assets/Elements/image.svg";
 
