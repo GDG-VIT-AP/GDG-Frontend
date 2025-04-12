@@ -23,6 +23,7 @@
     "@radix-ui/react-slot": "^1.2.0",
     "@tailwindcss/vite": "^4.0.9",
 
+
     "framer-motion": "^12.4.10",
     "axios": "^1.8.4",
     "class-variance-authority": "^0.7.1",
