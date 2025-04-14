@@ -4,6 +4,8 @@
 
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+@import "tw-animate-css";
+
 
 /* body {
     @apply font-product;
@@ -62,7 +64,6 @@
   }
 }
 
-@import "tw-animate-css";
 
 /* ✅ Smooth Slide-in from LEFT (for Past Events) */
 .animate-card-appear {

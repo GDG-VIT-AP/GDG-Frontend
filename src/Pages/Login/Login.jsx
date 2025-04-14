@@ -2,39 +2,48 @@
     Contributor : Daksh asati(REG: 23BEC7195) */}
 
 
-import React, { useState } from 'react';
+import React, {useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import InputField from "../../Components/InputField/InputField.jsx"; 
 import DesignElements from "../../Components/DesignElements/DesignElements.jsx";
 import Show_Password_icon from "../../assets/Elements/Show_Password_icon.svg";
 import Sign_with_google from "../../assets/Elements/sign in with google button.svg";
 import GDGLogo from "../../Components/GDGLogo/GDGLogo.jsx";
-import { checkZoom } from "../../Components/CheckZoom/CheckZoom.js";
+import { checkZoom } from "../../Components/CheckZoom/CheckZoom.jsx";
 import {postData} from "../../utils/api.js"
 
 
-function Login(props) {
+function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
 
+
  {/* Zoom in and out function imported from CheckZoom file from components */}
 checkZoom();
 
-{/* For login Button */}
+  {/* For login Button */}
 
-const handleLogin = async (e) => {
-  e.preventDefault();
-  const { success, data } = await postData('/api/v1/auth/login', { email, password });
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    console.log(email);
+    console.log(password);
+    const body = {
+      "email" : email,
+      "password" : password
+    }
 
-  if (success) {
-    alert('Login successful!');
-    localStorage.setItem('token', data.token);
-    // navigate to dashboard or home
-  } else {
-    alert(data.message || 'Login failed');
-  }
-};
+    const res = await postData('auth/login', body);
+    console.log(res)
+
+    if (res && res.success) {
+      localStorage.setItem('token', res.token);
+      // Add Navigate here after Home Page is added
+    } else {
+      alert(res.message || 'Login failed');
+    }
+  
+  };
 
   return (
     <div className="min-h-screen flex items-center justify-center p-4 md:p-6 lg:p-8 font-product">
