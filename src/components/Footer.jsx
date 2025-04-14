@@ -1,75 +1,28 @@
-/**
- * Purpose: Provides site-wide footer with credits and important links.
- * It appears at the bottom of every page for a consistent user experience.
- * Contributor: T K Sesha Sathvik 23BCE9627
- */
-import React from 'react';
-import gdgLogo from '../assets/gdg.jpg';
-import facebook from '../assets/facebook.svg';
-import instagram from '../assets/instagram.svg';
+// Purpose : Footer section in homepage
+// Contributor : Aryan Puri (23BCE8560)
+
+
+import React from "react";
+import logo from "../assets/image1.svg";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-start gap-8">
-          <div className="flex items-center space-x-2">
-            <div className="h-8 w-8">
-              <img src={gdgLogo} alt="GDG logo" />
-            </div>
-            <div>
-              <p className="font-medium">Google Developer Group</p>
-              <p className="text-sm text-gray-400">VIT-AP</p>
-            </div>
-          </div>
-
-          <div className="flex gap-16">
-            <div>
-              <h3 className="text-lg font-medium mb-4">Services</h3>
-              <ul className="space-y-2">
-                <li><a href="#" className="text-gray-400 hover:text-white">Feedback Page</a></li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-medium mb-4">Info</h3>
-              <ul className="space-y-2">
-                <li><a href="#" className="text-gray-400 hover:text-white">About us</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white">Our Team</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white">Events</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white">Home</a></li>
-              </ul>
-            </div>
+    <div className="p-5 bg-black text-white">
+      <div className="flex flex-col gap-3 md:flex-row md:justify-between w-full">
+        <div className="flex gap-3 items-center">
+          <img src={logo} alt="GDG Logo" className="h-12 w-12 object-contain" />
+          <div className="leading-tight">
+            <h1 className="text-lg font-bold text-white">Google Developer Group</h1>
+            <h2 className="text-md font-bold text-white">VIT-AP</h2>
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-gray-800">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="flex space-x-6 mb-4 md:mb-0">
-              <a href="#" className="text-gray-400 hover:text-white">
-                <span className="sr-only">Facebook</span>
-                <div className="h-8 w-5">
-                  <img src={facebook} alt="facebook" />
-                </div>
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white">
-                <span className="sr-only">Instagram</span>
-                <div className="h-8 w-5">
-                  <img src={instagram} alt="instagram" />
-                </div>
-              </a>
-            </div>
-            <div className="text-gray-400 text-sm">
-              <p>+91 00000 00000</p>
-              <p>gdgvitap@gmail.com</p>
-            </div>
-            <div className="text-gray-400 text-sm mt-4 md:mt-0">
-              © 2025 — Copyright
-            </div>
-          </div>
+        <div className="text-center md:text-right">
+          <p className="text-md"><a href="mailto:contact@gdgvitap.com" className="underline">contact@gdgvitap.com</a></p>
+          <p className="text-md">© {new Date().getFullYear()} GDG VIT-AP. All rights reserved.</p>
         </div>
       </div>
-    </footer>
+    </div>
   );
 };
 

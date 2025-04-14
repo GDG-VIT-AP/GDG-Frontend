@@ -13,7 +13,7 @@ import NavBar from "./Components/Navbar/NavBar.jsx";
 import './App.css';
 import Events from './pages/Events';
 import { EventsPage } from './pages/EventsPageMerge'
-import HomePage from './Components/Homepage'
+import HomePage from './pages/Homepage'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
