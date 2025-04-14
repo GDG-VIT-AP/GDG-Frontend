@@ -10,6 +10,7 @@ import Show_Password_icon from "../../assets/Elements/Show_Password_icon.svg";
 import Sign_with_google from "../../assets/Elements/sign in with google button.svg";
 import GDGLogo from "../../Components/GDGLogo/GDGLogo.jsx";
 import { checkZoom } from "../../Components/CheckZoom/CheckZoom.js";
+import {postData} from "../../utils/api.js"
 
 
 function Login(props) {
@@ -19,6 +20,21 @@ function Login(props) {
 
  {/* Zoom in and out function imported from CheckZoom file from components */}
 checkZoom();
+
+{/* For login Button */}
+
+const handleLogin = async (e) => {
+  e.preventDefault();
+  const { success, data } = await postData('/api/v1/auth/login', { email, password });
+
+  if (success) {
+    alert('Login successful!');
+    localStorage.setItem('token', data.token);
+    // navigate to dashboard or home
+  } else {
+    alert(data.message || 'Login failed');
+  }
+};
 
   return (
     <div className="min-h-screen flex items-center justify-center p-4 md:p-6 lg:p-8 font-product">
@@ -62,7 +78,8 @@ checkZoom();
           {/* Login Button */}
           <div className="mb-4 flex justify-center md:justify-end">
             <button className="bg-blue-500 text-white border-2 border-black px-8 py-2 rounded-full 
-                               hover:bg-blue-600 transition-all w-full md:w-auto">
+                               hover:bg-blue-600 transition-all w-full md:w-auto"
+                               onClick={handleLogin}>
               Login
             </button>
           </div>

@@ -10,6 +10,8 @@ import Show_Password_icon from "../../assets/Elements/Show_Password_icon.svg";
 import GDGLogo from "../../Components/GDGLogo/GDGLogo.jsx"; 
 import DesignElements from "../../Components/DesignElements/DesignElements.jsx";
 import { checkZoom } from "../../Components/CheckZoom/CheckZoom.js";
+import {postData} from "../../utils/api.js"
+
 
 
 function Signup(props) {
@@ -20,6 +22,21 @@ function Signup(props) {
   const [password, setPassword] = useState("");
   const [repassword, setRepassword] = useState("");
   const [isVerified, setIsVerified] = useState(true);
+
+  {/* For signup Button */}
+
+
+  const handleSignup = async (e) => {
+    e.preventDefault();
+    const { success, data } = await postData('/api/v1/auth/signup', { username,email, password,repassword });
+
+    if (success) {
+      alert('Signup successful!');
+      // Navigate or open OTP verification
+    } else {
+      alert(data.message || 'Signup failed');
+    }
+  };
 
  {/* Zoom in and out function imported from CheckZoom file from components */}
   checkZoom();
@@ -100,7 +117,8 @@ function Signup(props) {
           {/* Signup Button */}
           <div className="mb-2 flex justify-center md:justify-end">
             <button className="bg-blue-500 text-white border-2 border-black px-8 py-2 rounded-full 
-                               hover:bg-blue-600 transition-all w-full md:w-auto">
+                               hover:bg-blue-600 transition-all w-full md:w-auto"
+                               onClick={handleSignup}>
               Signup
             </button>
           </div>
