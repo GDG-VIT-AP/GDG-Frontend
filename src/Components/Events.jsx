@@ -1,3 +1,7 @@
+// Purpose : Events section with carousel in homepage
+// Contributor : Aryan Puri (23BCE8560)
+
+
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';

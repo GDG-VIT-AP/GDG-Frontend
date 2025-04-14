@@ -1,3 +1,7 @@
+// Purpose : About section in homepage
+// Contributor : Aryan Puri (23BCE8560)
+
+
 import React from 'react'
 import logo from "../assets/image1.svg";
 import group from "../assets/Frame.svg";

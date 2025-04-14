@@ -1,3 +1,7 @@
+// Purpose : Hero section containing bg video for large screens and static img for mobile screens in homepage
+// Contributor : Aryan Puri (23BCE8560)
+
+
 import React from 'react'
 import video from "../assets/bg.mp4"
 import bgImg from "../assets/bgimg.svg"

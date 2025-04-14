@@ -1,3 +1,7 @@
+// Purpose : Contact section in homepage
+// Contributor : Aryan Puri (23BCE8560)
+
+
 import React from "react";
 import insta from '../assets/insta.svg';
 import linkedin from "../assets/linkedin.svg";

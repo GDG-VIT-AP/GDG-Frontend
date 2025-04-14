@@ -1,3 +1,7 @@
+// Purpose : About team section for different departments in homepage
+// Contributor : Aryan Puri (23BCE8560)
+
+
 import React, { useState } from "react";
 import avatar from "../assets/avatar.svg";
 import github from "../assets/github.svg";

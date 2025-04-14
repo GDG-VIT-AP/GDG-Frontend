@@ -1,3 +1,7 @@
+// Purpose : Projects section with carousel in homepage
+// Contributor : Aryan Puri (23BCE8560)
+
+
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";

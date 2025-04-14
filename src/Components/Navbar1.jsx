@@ -1,3 +1,7 @@
+// Purpose : Navbar component of website
+// Contributor : Aryan Puri (23BCE8560)
+
+
 import React, { useState } from 'react';
 import { NavLink } from "react-router-dom";
 import logo from "../assets/image1.svg";
