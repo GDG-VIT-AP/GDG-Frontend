@@ -1,3 +1,10 @@
+/*Purpose: The index.css file serves as the foundational stylesheet for the entire GDG Frontend application. It establishes core styling configurations 
+including Tailwind CSS integration, base typography with Product Sans font family, root-level color schemes, responsive layout fundamentals, and component-level 
+styles for common elements (buttons, links, headers). The file implements a comprehensive footer design with responsive behavior, social media integration, and contact 
+information display, while maintaining consistent styling across light and dark color schemes. It ensures proper rendering across different browsers with font smoothing and 
+accessibility considerations, creating a robust foundation for the application's visual framework.*/
+
+/*Contributor: Arpit Makkar (23BCE7565)*/
 @import "tailwindcss";
 
 :root {

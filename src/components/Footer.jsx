@@ -1,3 +1,10 @@
+/*Purpose: The Footer.jsx component implements a dynamic dual-state footer for the GDG Frontend application. It features a responsive design 
+that switches between a minimal fixed footer (showing only logo and social icons) and a comprehensive static footer based on scroll position. 
+The full footer includes the GDG logo, service links, information sections, social media integration (Facebook, Twitter, LinkedIn, Instagram), 
+contact information, and copyright details. Using React's useState and useEffect hooks, it manages scroll-based visibility transitions and provides 
+interactive elements styled with Tailwind CSS, ensuring a consistent and professional appearance across the application.*/
+
+/*Contributor: Arpit Makkar (23BCE7565)*/
 import React, { useState, useEffect } from "react";
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 import blacklogo from "../assets/gdgblacklogo.png";

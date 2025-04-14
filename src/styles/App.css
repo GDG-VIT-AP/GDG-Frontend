@@ -1,3 +1,10 @@
+/*Purpose: The App.css file serves as the main stylesheet for the GDG Frontend application, 
+providing core styling configurations and animations. It defines root-level styles with a maximum width constraint (1280px),
+centers content, and includes specialized styles for logos with hover effects and animations (including a spin animation). 
+The stylesheet also implements responsive design considerations through media queries and defines basic component styles like cards and 
+documentation text, ensuring a consistent visual appearance across the application while maintaining responsive behavior and interactive elements.*/
+
+/*Contributor: Arpit Makkar (23BCE7565)*/
 #root {
   max-width: 1280px;
   margin: 0 auto;

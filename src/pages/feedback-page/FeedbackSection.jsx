@@ -1,3 +1,10 @@
+/*Purpose: The FeedbackSection.jsx component serves as a multi-page feedback collection interface for GDG events, 
+implementing a structured questionnaire system across three distinct sections: General Event Feedback, Content & Speakers, and Additional Feedback. 
+This component utilizes React's useState hook to manage feedback data and page navigation, featuring three different input types (star ratings, text areas, and radio buttons) 
+with a progress bar indicating completion status. The component employs a modular design pattern through the feedbackPages array structure, enabling easy modification of questions 
+and maintains a consistent UI with Tailwind CSS styling, while handling user input through the handleInputChange function and rendering appropriate input components based on question types.*/ 
+
+/*Contributor: Arpit Makkar (23BCE7565)*/
 import React, { useState } from 'react';
 
 // Define the feedback structure

@@ -1,3 +1,11 @@
+/*Purpose : The EventFeedbackForm.jsx component is a React-based feedback collection tool designed for GDG events, 
+featuring a star rating system to evaluate three key aspects: content relevance, speaker effectiveness, and venue quality. 
+Built with React hooks (useState) and styled using Tailwind CSS, the component includes an interactive 5-star rating interface, 
+a dynamic progress bar, and a clean, responsive layout. Core functionalities are handled by key functions like handleRatingChange, 
+isRated, getRatings, and calculateProgress, which manage the rating states and track form completion. The component's UI is structured with a main header, 
+rating sections with clear questions, and a progress indicator, all styled consistently for optimal user experience.*/
+
+/*Contributor: Arpit Makkar (23BCE7565)*/
 import React, { useState } from 'react';
 import starIcon from '../assets/Star.svg';  // Add this import
 

@@ -1,3 +1,10 @@
+/*Purpose: The FeedbackPage.css file serves as the dedicated stylesheet for the feedback page's navigation and layout components. 
+It defines comprehensive styles for the navigation bar (navbar), including fixed positioning, logo presentation, interactive elements (links, dropdowns, search), 
+and user authentication elements (avatar, login button). The stylesheet implements a modern design system with carefully chosen colors (using CSS variables), smooth transitions, 
+hover effects, and responsive behaviors. It ensures consistent spacing, elegant dropdowns with shadows, and interactive elements that provide visual feedback, all while maintaining a clean, 
+professional appearance that aligns with the GDG brand identity.*/
+
+/*Contributor: Arpit Makkar (23BCE7565)*/
 body {
     background: #f8f7ff;
 }
