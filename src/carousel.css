@@ -1,0 +1,17 @@
+/* carousel.css */
+.carousel .control-dots .dot {
+    background-color: #ddd;   /* Default gray color for inactive dots */
+    transition: background-color 0.3s ease;
+}
+
+.carousel .control-dots .dot:hover {
+    background-color: #5793f4;  /* Lighter blue on hover (#3b82f6 is Tailwind's blue-500) */
+}
+
+.carousel .control-dots .dot.selected {
+    background-color: #3674fa;  /* Blue color for active dot (#2563eb is Tailwind's blue-600) */
+}
+
+.carousel .control-dots {
+    bottom: -15px; /* Moves bullets further down */
+}
