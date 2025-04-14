@@ -161,10 +161,10 @@ const FeedbackSection = () => {
 
   return (
     <div className="flex items-center justify-center h-screen">
-      <div className="mx-auto my-8 bg-[#E2E8F0] rounded-lg p-6 shadow-sm max-w-2x1 text-black">
+      <div className="mx-auto my-8 bg-[#F6F9FF] rounded-lg p-6 shadow-sm max-w-2x1 text-black border border-[#828FBB]">
         <h2 className="text-2xl font-bold text-center mb-2">Feedback Section</h2>
         <h4 className="text-xl text-center mb-6 font-bold">
-          Event Name - Page {currentPage}/{feedbackPages.length}
+          Event Name 
         </h4>
         
         {/* Progress bar */}

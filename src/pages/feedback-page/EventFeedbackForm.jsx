@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import starIcon from '../assets/Star.svg';  // Add this import
 
 const EventFeedbackForm = () => {
   const [contentRating, setContentRating] = useState(0);
@@ -20,17 +21,13 @@ const EventFeedbackForm = () => {
             onClick={() => onRatingChange(star)}
             className="focus:outline-none"
           >
-            <svg
+            <img
+              src={starIcon}
+              alt="star"
               width="40"
               height="40"
-              viewBox="0 0 24 24"
-              fill={star <= rating ? "#000" : "none"}
-              stroke="#000"
-              strokeWidth="2"
-              className="w-10 h-10"
-            >
-              <path d="M12 2l2.4 7.4H22l-6 4.4 2.3 7.1-6.3-4.6-6.3 4.6 2.3-7.1-6-4.4h7.6z" />
-            </svg>
+              className={`w-10 h-10 ${star <= rating ? 'brightness-100' : 'brightness-50'}`}
+            />
           </button>
         ))}
       </div>
@@ -50,51 +47,53 @@ const EventFeedbackForm = () => {
   };
 
   return (
-    <div className="flex flex-col items-center w-full max-w-4xl mx-auto bg-gray-50 p-6 rounded-lg">
-      <div className="text-center mb-8 w-full">
-        <h1 className="text-4xl font-bold mb-2">Feedback Section</h1>
-        <h2 className="text-2xl mb-6">Event Name</h2>
-        
-        {/* Progress bar using calculateProgress function */}
-        <div className="w-full bg-gray-200 rounded-full h-4 mb-6">
-          <div 
-            className="bg-blue-500 h-4 rounded-full" 
-            style={{ width: `${calculateProgress()}%` }}
-          ></div>
-        </div>
-      </div>
-      
-      <div className="bg-white w-full p-8 rounded-lg shadow">
-        <h2 className="text-2xl font-bold mb-6">Content & Speakers</h2>
-        
-        <div className="mb-8">
-          <p className="mb-3">How relevant and useful was the content presented? (1 - Not useful, 5 - Extremely useful)</p>
-          <StarRating 
-            rating={contentRating} 
-            onRatingChange={(rating) => handleRatingChange(rating, setContentRating)} 
-          />
+    <div className="flex flex-col items-center w-full min-h-screen bg-gray-100 py-16 px-8">
+      <div className="w-full max-w-7xl mx-auto bg-gray-50 p-12 rounded-2xl shadow-xl">
+        <div className="text-center mb-16 w-full">
+          <h1 className="text-6xl font-bold mb-6">Feedback Section</h1>
+          <h2 className="text-4xl mb-10">Event Name</h2>
+          
+          {/* Progress bar with reduced width */}
+          <div className="w-3/4 mx-auto bg-gray-200 rounded-full h-8 mb-12">
+            <div 
+              className="bg-[#4889f4] h-6 rounded-full transition-all duration-300 " 
+              style={{ width: `${calculateProgress()}%` }}
+            ></div>
+          </div>
         </div>
         
-        <div className="mb-8">
-          <p className="mb-3">How would you rate the speakers/presenters? (1 - Not effective, 5 - Very effective)</p>
-          <StarRating 
-            rating={speakerRating} 
-            onRatingChange={(rating) => handleRatingChange(rating, setSpeakerRating)} 
-          />
-        </div>
-        
-        <div className="mb-8">
-          <p className="mb-3">How would you rate the event venue and setup? (1 - Poor, 5 - Excellent)</p>
-          <StarRating 
-            rating={venueRating} 
-            onRatingChange={(rating) => handleRatingChange(rating, setVenueRating)} 
-          />
-        </div>
-        
-        <div className="flex justify-end mt-6">
-          <button className="bg-blue-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-600 transition-colors">
-            Next »
-          </button>
+        <div className="bg-white w-full p-16 rounded-2xl shadow-lg space-y-16">
+          <h2 className="text-4xl font-bold mb-10">Content & Speakers</h2>
+          
+          <div className="mb-16">
+            <p className="text-2xl mb-6">How relevant and useful was the content presented? (1 - Not useful, 5 - Extremely useful)</p>
+            <StarRating 
+              rating={contentRating} 
+              onRatingChange={(rating) => handleRatingChange(rating, setContentRating)} 
+            />
+          </div>
+          
+          <div className="mb-16">
+            <p className="text-2xl mb-6">How would you rate the speakers/presenters? (1 - Not effective, 5 - Very effective)</p>
+            <StarRating 
+              rating={speakerRating} 
+              onRatingChange={(rating) => handleRatingChange(rating, setSpeakerRating)} 
+            />
+          </div>
+          
+          <div className="mb-16">
+            <p className="text-2xl mb-6">How would you rate the event venue and setup? (1 - Poor, 5 - Excellent)</p>
+            <StarRating 
+              rating={venueRating} 
+              onRatingChange={(rating) => handleRatingChange(rating, setVenueRating)} 
+            />
+          </div>
+          
+          <div className="flex justify-end mt-12">
+            <button className="bg-blue-500 text-white px-12 py-4 text-xl rounded-full font-semibold hover:bg-blue-600 transition-colors">
+              Next »
+            </button>
+          </div>
         </div>
       </div>
     </div>
