@@ -9,11 +9,11 @@ import Signup from "./Pages/Signup/Signup.jsx";
 import SignupwithVerify from "./Pages/SignupwithVerify/SignupwithVerify.jsx";
 import "../src/App.css";
 import Footer from "./Components/Footer/Footer.jsx";
-import NavBar from "./Components/NavBar1.jsx";
+import NavBar from "./Components/Navbar1.jsx";
 import './App.css';
-import Events from './pages/Events';
-import { EventsPage } from './pages/EventsPageMerge'
-import HomePage from './pages/Homepage'
+import Events from './pages/Events.jsx';
+import { EventsPage } from './pages/EventsPageMerge.jsx'
+import HomePage from './pages/Homepage.jsx'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
