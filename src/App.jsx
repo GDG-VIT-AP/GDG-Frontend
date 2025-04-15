@@ -9,7 +9,7 @@ import Signup from "./Pages/Signup/Signup.jsx";
 import SignupwithVerify from "./Pages/SignupwithVerify/SignupwithVerify.jsx";
 import "../src/App.css";
 import Footer from "./Components/Footer/Footer.jsx";
-import NavBar from "./Components/Navbar/NavBar.jsx";
+import NavBar from "./Components/NavBar1.jsx";
 import './App.css';
 import Events from './pages/Events';
 import { EventsPage } from './pages/EventsPageMerge'
@@ -20,7 +20,7 @@ function App() {
  
   return (
     <div className="flex flex-col min-h-screen">
-      <NavBar />
+      <NavBar/>
       <main className="flex-grow">
         <Routes>
           <Route path="/Login" element={<Login />} />

@@ -8,7 +8,7 @@ import { useLocation, NavLink } from 'react-router-dom';
 import google_developers_group from "../../assets/Elements/Google_developrs_header.svg";
 import ProfilePhoto from "../../Pages/ProfilePhoto/Profile"; 
 
-function NavBar(props) {
+function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
 
@@ -25,7 +25,7 @@ function NavBar(props) {
   {/* All Links */}
   const renderNavLinks = () => {
     const navLinks = [
-      { path: "/Home", label: "Home" },
+      { path: "/", label: "Home" },
       { path: "/about", label: "About us" },
       { path: "/events", label: "Events" },
       { path: "/project", label: "Project" },

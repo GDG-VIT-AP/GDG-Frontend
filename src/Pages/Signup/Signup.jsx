@@ -175,7 +175,7 @@ function Signup() {
 
           {/* Login Link */}
           <div className="mt-6 text-center pb-4">
-            <NavLink to="/" className="text-blue-500 underline hover:text-blue-700 text-sm">
+            <NavLink to="/login" className="text-blue-500 underline hover:text-blue-700 text-sm">
               Already have an account? Login Here
             </NavLink>
           </div>

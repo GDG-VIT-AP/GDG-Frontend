@@ -7,9 +7,6 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import '../carousel.css';
 
-import img1 from '../assets/Frame.svg';
-import img2 from '../assets/image1.svg';
-import img3 from '../assets/d1.svg';
 import leftArrow from '../assets/left-arrow.png';
 import rightArrow from '../assets/right-arrow.png';
 import cloud from '../assets/cloud.svg';
@@ -21,19 +18,36 @@ import e1 from '../assets/e1.svg';
 import e2 from '../assets/e2.svg';
 import e5 from '../assets/e5.svg';
 import d1 from '../assets/d1.svg';
+import { Navigate, useNavigate } from 'react-router-dom';
 
 // Slide Component
-const Slide = ({ image, title }) => (
-    <div className="relative h-[300px] md:h-[400px] lg:h-[500px] xl:h-[500px] flex">
-        <img src={image} alt={title} className="object-contain h-1/2 w-auto rounded-lg z-20 md:mt-8" />
+const Slide = ({ image, title, eventID, nav }) => {
+
+    const handleNavigation = () => {
+        nav(`/event/${eventID}`);
+    };
+    return(
+    <div className="relative h-[400px] md:h-[400px] lg:h-[500px] xl:h-[600px] flex">
+        <div className='flex w-full justify-center'>
+            <div className="relative z-20 w-fit h-3/5 lg:h-3/4 xl:h-3/4 flex justify-center items-center cursor-pointer " onClick={handleNavigation}>
+                
+                <img 
+                    src={image} 
+                    alt={title} 
+                    className="z-21 border-2 border-black object-contain max-h-full max-w-full  rounded-lg"
+                />
+
+            </div>
+            </div>
         <div className="absolute inset-0 bottom-0 md:bottom-0 bg-white bg-opacity-40 flex flex-col items-start justify-end p-4 md:p-8">
             <h2 className="text-black text-lg md:text-2xl lg:text-3xl font-bold mb-2 ">{title}</h2>
-            <button className="bg-blue-500 text-black px-4 md:px-6 py-1 md:py-2 border-2 border-black rounded-2xl mt-2 hover:bg-blue-600 transition cursor-pointer">
+            <button className="bg-blue-500 text-black px-4 md:px-6 py-1 md:py-2 border-2 border-black rounded-2xl mt-2 hover:bg-blue-600 transition cursor-pointer" onClick={handleNavigation}>
                 Learn More
             </button>
         </div>
     </div>
-);
+    )
+}
 
 const CustomArrow = ({ onClick, direction }) => (
     <button
@@ -48,12 +62,8 @@ const CustomArrow = ({ onClick, direction }) => (
     </button>
 );
 
-const Events = () => {
-    const slidesData = [
-        { image: img1, title: 'Event 1: Hackathon' },
-        { image: img2, title: 'Event 2: Workshop' },
-        { image: img3, title: 'Event 3: Meeting' },
-    ];
+const Events = ({slidesData}) => {
+    const navigate = useNavigate();
 
     return (
         <div className="relative w-full mx-auto my-32 md:my-60 px-4 md:px-20 xl:px-50">
@@ -88,10 +98,10 @@ const Events = () => {
                 renderArrowNext={(onClickHandler) => (
                     <CustomArrow onClick={onClickHandler} direction="right" />
                 )}
-                className="rounded-4xl shadow-md relative border-2 border-black p-3 z-20"
+                className="rounded-4xl shadow-md relative border-2 border-black p-3 z-20 xl:m-10"
             >
                 {slidesData.map((slide, index) => (
-                    <Slide key={index} image={slide.image} title={slide.title} />
+                    <Slide key={index} image={slide.bannerUrl} title={slide.title} eventID={slide.eventID} nav={navigate}/>
                 ))}
             </Carousel>
         </div>

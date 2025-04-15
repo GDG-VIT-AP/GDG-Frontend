@@ -10,14 +10,39 @@ import Projects from '../components/Projects'
 import Team from '../components/Team'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
+import { useEffect, useState } from 'react'
+import { getData } from '@/utils/api'
 
 const Homepage = () => {
+
+  const [events, setEvents] = useState([]);
+  
+  useEffect(() =>{
+    const getEventsData = async () =>{
+      const upcomingEvents = await getData("event/getUpcomingEvents")
+      const pastEvents = await getData("event/getPastEvents")
+      const upcomingEventsList = upcomingEvents?.success ? 
+          upcomingEvents.data.map(event => ({
+            title: event.title,
+            bannerUrl: event.bannerUrl,
+            eventID: event.eventID
+          })) : [];
+        const pastEventsList = pastEvents?.success ? 
+        pastEvents.data.map(event => ({
+          title: event.title,
+          bannerUrl: event.bannerUrl,
+          eventID: event.eventID
+        })) : [];
+        setEvents([...upcomingEventsList, ...pastEventsList])
+    }
+    getEventsData()
+  }, [])
   return (
     <>
       <Navbar1 />
       <Hero1 />
       <About />
-      <Events />
+      <Events slidesData={events}/>
       <Projects />
       <Team />
       <Contact />

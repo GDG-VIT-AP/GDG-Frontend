@@ -6,9 +6,10 @@
 import React, { useEffect, useState } from "react";
 import vector from '../assets/vector.png';
 import rectangle from '../assets/Rectangle.png';
+import { NavLink } from "react-router-dom";
 
 function EventCard({ event }) {
-  const [animateCount, setAnimateCount] = useState(false);
+  const [_, setAnimateCount] = useState(false);
   const count = 5; // Default rating 5
 
   // Trigger animation when count updates
@@ -27,18 +28,18 @@ function EventCard({ event }) {
     >
 
       {/* Event Image */}
-      <div
+      <NavLink
         className="EventImage w-[477px] h-[268px] max-xl:w-[400px] max-lg:w-[300px] rounded-2xl bg-cover bg-center"
-        style={{ backgroundImage: `url(${event.bannerUrl})` }}
-      ></div>
+        style={{ backgroundImage: `url(${event.bannerUrl})` }} to={`/event/${event.eventId}`}
+      ></NavLink>
 
       {/* Event Details */}
-      <div className="EventDetails flex flex-col justify-between p-4 flex-grow h-full gap-[70px] max-xl:gap-[40px] max-lg:gap-[20px]">
+      <div className="EventDetails flex flex-col justify-between p-4 flex-grow h-full gap-[50px] max-xl:gap-[40px] max-lg:gap-[20px]">
 
         {/* Title and Description */}
         <div className="mt-[7px]">
           <h3 className="text-[40px] font-bold text-[#333]">{event.title}</h3>
-          <p className="text-[20px] text-gray-600 font-sans">{event.description}</p>
+          <p className="text-md text-gray-600 font-sans">{event.description.substr(0,75) + "....."}</p>
         </div>
 
         {/* Date and Time */}

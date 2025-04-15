@@ -9,7 +9,7 @@ import circle from "../assets/Ellipse 1.svg";
 import menu from "../assets/menu.png";
 import close from "../assets/close.png";
 
-const Navbar = () => {
+export const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const navLinks = [
         { path: "/", label: "Home" },
@@ -61,13 +61,14 @@ const Navbar = () => {
 
                     {/*Login*/}
                     <div className="flex items-center space-x-5">
-                        <div
+                        <NavLink
                             className="p-1 h-10 w-24 rounded-4xl border text-center font-semibold border-black bg-blue-500 text-black hover:bg-blue-600 cursor-pointer transition duration-200 select-none"
-                            onClick={() => console.log("Login clicked!")}
+                            onClick={() => setIsOpen(false)} 
+                            to={"/login"}
                             role="button"
                         >
                             Login
-                        </div>
+                        </NavLink>
                         <img
                             src={circle}
                             alt="circle"
@@ -94,13 +95,14 @@ const Navbar = () => {
                                 </NavLink>
                             </li>
                         ))}
-                        <div
+                        <NavLink
                             className="p-0 h-8 w-24 rounded-4xl border text-center font-semibold border-black bg-blue-500 text-black hover:bg-blue-600 cursor-pointer transition duration-200 select-none"
-                            onClick={() => console.log("Login clicked!")}
+                            to={"/login"}
+                            onClick={() => setIsOpen(false)}
                             role="button"
                         >
                             Login
-                        </div>
+                        </NavLink>
                     </ul>
                 </div>
             )}
