@@ -23,13 +23,13 @@ function App() {
       <NavBar/>
       <main className="flex-grow">
         <Routes>
-          <Route path="/Login" element={<Login />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/" element={<HomePage />}/>
-          <Route path="/Signup" element={<Signup />} />
-          <Route path="/SignupwithVerify" element={<SignupwithVerify />} />
+          <Route path="/signup" element={<Signup />} />
+          {/* <Route path="/SignupwithVerify" element={<SignupwithVerify />} /> */}
           <Route path="/event/:id" element={<EventsPage />} />
           <Route path="/events" element={<Events/>}/>
-          <Route path="/Admins" element={<AdminPage/>}/>
+          <Route path="/admins" element={<AdminPage/>}/>
         </Routes>
       </main>
       <Footer />
