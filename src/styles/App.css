@@ -1,0 +1,49 @@
+/*Purpose: The App.css file serves as the main stylesheet for the GDG Frontend application, 
+providing core styling configurations and animations. It defines root-level styles with a maximum width constraint (1280px),
+centers content, and includes specialized styles for logos with hover effects and animations (including a spin animation). 
+The stylesheet also implements responsive design considerations through media queries and defines basic component styles like cards and 
+documentation text, ensuring a consistent visual appearance across the application while maintaining responsive behavior and interactive elements.*/
+
+/*Contributor: Arpit Makkar (23BCE7565)*/
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
