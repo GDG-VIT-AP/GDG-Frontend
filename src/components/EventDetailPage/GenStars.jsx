@@ -1,5 +1,4 @@
-import StarIcon from "../../assets/star.svg";  // Adjust the path based on your folder structure
-
+import StarIcon from "../../assets/Star.svg";  // Adjust the path based on your folder structure
 export const Stars = ({rating}) =>{
 
     if(rating > 5 ||rating < 0){
