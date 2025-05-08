@@ -6,7 +6,7 @@ import Navbar1 from '../components/Navbar1'
 import Hero1 from '../components/Hero1'
 import About from '../components/About'
 import Events from '../components/Events'
-import Projects from '../components/Projects'
+import Projects from '../components/Projects_HP'
 import Team from '../components/Team'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
@@ -46,7 +46,7 @@ const Homepage = () => {
       <Projects />
       <Team />
       <Contact />
-      <Footer />
+      {/* <Footer /> */}
 
     </>
   )

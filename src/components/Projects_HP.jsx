@@ -14,7 +14,7 @@ import img3 from '../assets/d1.svg';
 import e3 from '../assets/e3.svg';
 import pr1 from '../assets/pr1.svg';
 import pr2 from '../assets/pr2.svg';
-import pr3 from '../assets/pr3.svg';
+// import pr3 from '../assets/pr3.svg';
 import pr4 from '../assets/pr4.svg';
 import pr6 from '../assets/pr6.svg';
 import gb from '../assets/gb.svg';

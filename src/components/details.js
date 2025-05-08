@@ -1,497 +1,973 @@
-export const data=[
-    {
-      "memberID": "001",
-      "name": "Sophia Ray",
-      "email": "sophia.ray@example.com",
-      "departmentID": "dept-design",
-      "departmentRole": "lead",
+export const data = [
+  {
+      "memberID": "6a364f64-bb09-4848-831c-734d8a9964ec",
+      "name": "Dhani",
+      "email": "dhani.24bce7569@vitapstudent.ac.in",
+      "departmentID": "AIML",
+      "departmentRole": "Member",
       "currentMember": true,
-      "snsLink1ID": "sns-101",
-      "snsLink2ID": "sns-102",
-      "profPic": "https://example.com/profiles/sophia.jpg",
-      "projects": [],
-      "department": {
-        "departmentID": "dept-design",
-        "name": "Design Team"
-      }
-    },
-    {
-      "memberID": "002",
-      "name": "Liam Patel",
-      "email": "liam.patel@example.com",
-      "departmentID": "dept-design",
-      "departmentRole": "co-lead",
+      "snsLink1": null,
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/24BCE7569.jpg?",
+      "regNo": "24BCE7569"
+  },
+  {
+      "memberID": "da1791f1-889c-4e85-baac-b1f00ae93ae1",
+      "name": "Vaibhav Manihar",
+      "email": "vaibhav.23bcb7163@vitapstudent.ac.in",
+      "departmentID": "AIML",
+      "departmentRole": "Member",
       "currentMember": true,
-      "snsLink1ID": "sns-103",
-      "snsLink2ID": "sns-104",
-      "profPic": "https://example.com/profiles/liam.jpg",
-      "projects": [],
-      "department": {
-        "departmentID": "dept-design",
-        "name": "Design Team"
-      }
-    },
-    {
-      "memberID": "003",
-      "name": "Emily Chen",
-      "email": "emily.chen@example.com",
-      "departmentID": "dept-design",
-      "departmentRole": "member",
+      "snsLink1": null,
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23BCB7163.jpg?",
+      "regNo": "23BCB7163"
+  },
+  {
+      "memberID": "0625d01a-59da-48c6-9061-4931049573eb",
+      "name": "Khushi Trilok Rawat",
+      "email": "khushi.23bce7131@vitapstudent.ac.in",
+      "departmentID": "AIML",
+      "departmentRole": "Member",
       "currentMember": true,
-      "snsLink1ID": "sns-105",
-      "snsLink2ID": "sns-106",
-      "profPic": "https://example.com/profiles/emily.jpg",
-      "projects": [],
-      "department": {
-        "departmentID": "dept-design",
-        "name": "Design Team"
-      }
-    },
-    {
-      "memberID": "004",
-      "name": "Arjun Mehta",
-      "email": "arjun.mehta@example.com",
-      "departmentID": "dept-design",
-      "departmentRole": "member",
+      "snsLink1": "https://www.linkedin.com/in/khushi-rawat-b58585292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23BCE7131.jpg?",
+      "regNo": "23BCE7131"
+  },
+  {
+      "memberID": "db42ea36-29e2-4e6d-a7b9-d341bee8093e",
+      "name": "Akshat Goel",
+      "email": "akshat.23bce7958@vitapstudent.ac.in",
+      "departmentID": "AIML",
+      "departmentRole": "Member",
       "currentMember": true,
-      "snsLink1ID": "sns-107",
-      "snsLink2ID": "sns-108",
-      "profPic": "https://example.com/profiles/arjun.jpg",
-      "projects": [],
-      "department": {
-        "departmentID": "dept-design",
-        "name": "Design Team"
-      }
-    },
-    {
-      "memberID": "005",
-      "name": "Maya Kapoor",
-      "email": "maya.kapoor@example.com",
-      "departmentID": "dept-core",
-      "departmentRole": "lead",
+      "snsLink1": "https://linkedin.com/in/coder-akshat/",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23BCE7958.jpg?",
+      "regNo": "23BCE7958"
+  },
+  {
+      "memberID": "b4de75cf-1f5e-45a8-918e-20f2743eb26d",
+      "name": "SUBHOJEET CHANDA",
+      "email": "subhojeet.23bce9173@vitapstudent.ac.in",
+      "departmentID": "AIML",
+      "departmentRole": "Member",
       "currentMember": true,
-      "snsLink1ID": "sns-109",
-      "snsLink2ID": "sns-110",
-      "profPic": "https://example.com/profiles/maya.jpg",
-      "projects": [],
-      "department": {
-        "departmentID": "dept-core",
-        "name": "Core Team"
-      }
-    },
-    {
-      "memberID": "006",
-      "name": "Ethan Reddy",
-      "email": "ethan.reddy@example.com",
-      "departmentID": "dept-core",
-      "departmentRole": "co-lead",
+      "snsLink1": "https://www.linkedin.com/in/subhojeet-chanda-852a1722b/",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23BCE9173.jpg?",
+      "regNo": "23BCE9173"
+  },
+  {
+      "memberID": "391fdd58-ec44-4885-a5a0-399e6a39a2ec",
+      "name": "Amey Rasekar",
+      "email": "vinod.23bce8587@vitapstudent.ac.in",
+      "departmentID": "AIML",
+      "departmentRole": "Member",
       "currentMember": true,
-      "snsLink1ID": "sns-111",
-      "snsLink2ID": "sns-112",
-      "profPic": "https://example.com/profiles/ethan.jpg",
-      "projects": [],
-      "department": {
-        "departmentID": "dept-core",
-        "name": "Core Team"
-      }
-    },
-    {
-      "memberID": "007",
-      "name": "Zara Ali",
-      "email": "zara.ali@example.com",
-      "departmentID": "dept-core",
-      "departmentRole": "member",
+      "snsLink1": "https://www.linkedin.com/in/amey-rasekar/",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23BCE8587.jpg?",
+      "regNo": "23BCE8587"
+  },
+  {
+      "memberID": "a9da4127-b28a-4635-bd2c-9da2b25ca5c0",
+      "name": "K VIJAY KUMAR",
+      "email": "vijay.23mic7015@vitapstudent.ac.in",
+      "departmentID": "AIML",
+      "departmentRole": "Member",
       "currentMember": true,
-      "snsLink1ID": "sns-113",
-      "snsLink2ID": "sns-114",
-      "profPic": "https://example.com/profiles/zara.jpg",
-      "projects": [],
-      "department": {
-        "departmentID": "dept-core",
-        "name": "Core Team"
-      }
-    },{
-      "memberID": "019",
-      "name": "Zara Ali",
-      "email": "zara.ali@example.com",
-      "departmentID": "dept-core",
-      "departmentRole": "member",
+      "snsLink1": "https://www.linkedin.com/in/vijay-kumar-485858323?trk=contact-info",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23MIC7015.jpg?",
+      "regNo": "23MIC7015"
+  },
+  {
+      "memberID": "f0837218-ddb9-421b-803e-1b4a03482162",
+      "name": "GAVINI SAI GEETESWA SUDARSHAN",
+      "email": "sudarshan.23bce8626@vitapstudent.ac.in",
+      "departmentID": "AIML",
+      "departmentRole": "Member",
       "currentMember": true,
-      "snsLink1ID": "sns-113",
-      "snsLink2ID": "sns-114",
-      "profPic": "https://example.com/profiles/zara.jpg",
-      "projects": [],
-      "department": {
-        "departmentID": "dept-core",
-        "name": "Core Team"
-      }
-    },
-    {
-      "memberID": "008",
-      "name": "Nikhil Roy",
-      "email": "nikhil.roy@example.com",
-      "departmentID": "dept-core",
-      "departmentRole": "member",
+      "snsLink1": "https://www.linkedin.com/in/gavini-sai-geeteswa-sudarshan-79a631329?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23BCE8626.jpg?",
+      "regNo": "23BCE8626"
+  },
+  {
+      "memberID": "642cf18d-e066-463a-8daa-7b99d24c3963",
+      "name": "Raj Singh",
+      "email": "raj.23bce7108@vitapstudent.ac.in",
+      "departmentID": "AIML",
+      "departmentRole": "Member",
       "currentMember": true,
-      "snsLink1ID": "sns-115",
-      "snsLink2ID": "sns-116",
-      "profPic": "https://example.com/profiles/nikhil.jpg",
-      "projects": [],
-      "department": {
-        "departmentID": "dept-core",
-        "name": "Core Team"
-      }
-    },
-    {
-      "memberID": "009",
-      "name": "Aisha Verma",
-      "email": "aisha.verma@example.com",
-      "departmentID": "dept-web",
-      "departmentRole": "lead",
+      "snsLink1": "https://www.linkedin.com/in/raj-singh-b673b827b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23BCE7108.jpg?",
+      "regNo": "23BCE7108"
+  },
+  {
+      "memberID": "a046c846-4f06-4d20-a547-ce65c0333fe0",
+      "name": "Rounak Acharyya",
+      "email": "rounak.23bce7957@vitapstudent.ac.in",
+      "departmentID": "AIML",
+      "departmentRole": "Member",
       "currentMember": true,
-      "snsLink1ID": "sns-117",
-      "snsLink2ID": "sns-118",
-      "profPic": "https://example.com/profiles/aisha.jpg",
-      "projects": [],
-      "department": {
-        "departmentID": "dept-web",
-        "name": "Web Development Team"
-      }
-    },
-    {
-      "memberID": "010",
-      "name": "Ryan Das",
-      "email": "ryan.das@example.com",
-      "departmentID": "dept-web",
-      "departmentRole": "co-lead",
+      "snsLink1": null,
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23BCE7957.jpg?",
+      "regNo": "23BCE7957"
+  },
+  {
+      "memberID": "01de473c-9625-4b5f-a01e-287d726006da",
+      "name": "Mithun Pattabhi",
+      "email": "mithun.23bce8347@vitapstudent.ac.in",
+      "departmentID": "AIML",
+      "departmentRole": "Member",
       "currentMember": true,
-      "snsLink1ID": "sns-119",
-      "snsLink2ID": "sns-120",
-      "profPic": "https://example.com/profiles/ryan.jpg",
-      "projects": [],
-      "department": {
-        "departmentID": "dept-web",
-        "name": "Web Development Team"
-      }
-    },
-    {
-      "memberID": "011",
-      "name": "Meera Jain",
-      "email": "meera.jain@example.com",
-      "departmentID": "dept-web",
-      "departmentRole": "member",
+      "snsLink1": "https://www.linkedin.com/in/mithun-pattabhi-b001172a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23BCE8347.jpg?",
+      "regNo": "23BCE8347"
+  },
+  {
+      "memberID": "b7d2e3ae-a4ed-4c3d-b70a-a25e773a7b54",
+      "name": "Nanduri sai tejaswani  srikari",
+      "email": "nandurisrikari@gmail.com",
+      "departmentID": "CLOUD",
+      "departmentRole": "Member",
       "currentMember": true,
-      "snsLink1ID": "sns-121",
-      "snsLink2ID": "sns-122",
-      "profPic": "https://example.com/profiles/meera.jpg",
-      "projects": [],
-      "department": {
-        "departmentID": "dept-web",
-        "name": "Web Development Team"
-      }
-    },
-    {
-      "memberID": "012",
-      "name": "Kunal Yadav",
-      "email": "kunal.yadav@example.com",
-      "departmentID": "dept-web",
-      "departmentRole": "member",
+      "snsLink1": "https://www.linkedin.com/in/nanduri-srikari-094082293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23BEC7140_.jpg?",
+      "regNo": "23BEC7140"
+  },
+  {
+      "memberID": "53e99bb0-b79b-4e24-b554-83c6c6a8ddc8",
+      "name": "Vishwanath Tiwari",
+      "email": "vishwanath.23bce8034@vitapstudent.ac.in",
+      "departmentID": "CLOUD",
+      "departmentRole": "Member",
       "currentMember": true,
-      "snsLink1ID": "sns-123",
-      "snsLink2ID": "sns-124",
-      "profPic": "https://example.com/profiles/kunal.jpg",
-      "projects": [],
-      "department": {
-        "departmentID": "dept-web",
-        "name": "Web Development Team"
-      }
-    },
-    {
-      "memberID": "013",
-      "name": "Tanya Sharma",
-      "email": "tanya.sharma@example.com",
-      "departmentID": "dept-marketing",
-      "departmentRole": "lead",
+      "snsLink1": "https://www.linkedin.com/in/vishwanath-tiwari-779528287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23BCE8034.jpg?",
+      "regNo": "23BCE8034"
+  },
+  {
+      "memberID": "59d973be-deb8-4f27-8f23-d9c4fff4e014",
+      "name": "Shivashant",
+      "email": "shivashant.23bce9165@vitapstudent.ac.in",
+      "departmentID": "CLOUD",
+      "departmentRole": "Member",
       "currentMember": true,
-      "snsLink1ID": "sns-125",
-      "snsLink2ID": "sns-126",
-      "profPic": "https://example.com/profiles/tanya.jpg",
-      "projects": [],
-      "department": {
-        "departmentID": "dept-marketing",
-        "name": "Marketing Team"
-      }
-    },
-    {
-      "memberID": "014",
-      "name": "Kabir Sen",
-      "email": "kabir.sen@example.com",
-      "departmentID": "dept-marketing",
-      "departmentRole": "co-lead",
+      "snsLink1": null,
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23BCE9165.jpg?",
+      "regNo": "23BCE9165"
+  },
+  {
+      "memberID": "99138b6a-8bff-4449-8687-a4b9a24389fa",
+      "name": "Markandey Vatsa",
+      "email": "vatsamarkandeya@gmail.com",
+      "departmentID": "CLOUD",
+      "departmentRole": "Member",
       "currentMember": true,
-      "snsLink1ID": "sns-127",
-      "snsLink2ID": "sns-128",
-      "profPic": "https://example.com/profiles/kabir.jpg",
-      "projects": [],
-      "department": {
-        "departmentID": "dept-marketing",
-        "name": "Marketing Team"
-      }
-    },
-    {
-      "memberID": "015",
-      "name": "Priya Narayan",
-      "email": "priya.narayan@example.com",
-      "departmentID": "dept-marketing",
-      "departmentRole": "member",
+      "snsLink1": "https://www.linkedin.com/in/markandey-vatsa-aa114224a/",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/22BCE7577.jpg?",
+      "regNo": "22BCE7577"
+  },
+  {
+      "memberID": "b4de32d3-1a02-4c96-b646-a060ea1ad790",
+      "name": "Sidharth Raman",
+      "email": "sidharth.23mic7142@vitapstudent.ac.in",
+      "departmentID": "CLOUD",
+      "departmentRole": "Member",
       "currentMember": true,
-      "snsLink1ID": "sns-129",
-      "snsLink2ID": "sns-130",
-      "profPic": "https://example.com/profiles/priya.jpg",
-      "projects": [],
-      "department": {
-        "departmentID": "dept-marketing",
-        "name": "Marketing Team"
-      }
-    },
-    {
-      "memberID": "016",
-      "name": "Rajat Choudhary",
-      "email": "rajat.choudhary@example.com",
-      "departmentID": "dept-marketing",
-      "departmentRole": "member",
+      "snsLink1": "https://www.linkedin.com/in/sidharth-raman-830489304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23mic7142.jpg?",
+      "regNo": "23mic7142"
+  },
+  {
+      "memberID": "48b3323c-576c-4066-b9db-d33df8ded7d4",
+      "name": "Ankababu Erla",
+      "email": "ankababu.23bme7066@vitapstudent.ac.in",
+      "departmentID": "CLOUD",
+      "departmentRole": "Member",
       "currentMember": true,
-      "snsLink1ID": "sns-131",
-      "snsLink2ID": "sns-132",
-      "profPic": "https://example.com/profiles/rajat.jpg",
-      "projects": [],
-      "department": {
-        "departmentID": "dept-marketing",
-        "name": "Marketing Team"
-      }
-    },
-    {
-      "memberID": "017",
-      "name": "Devika Rao",
-      "email": "devika.rao@example.com",
-      "departmentID": "dept-ml",
-      "departmentRole": "lead",
+      "snsLink1": null,
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23BME7066.jpg?",
+      "regNo": "23BME7066"
+  },
+  {
+      "memberID": "ab9a5ecd-2fed-41b7-8190-449be4ca4740",
+      "name": "Gaurav Sharma",
+      "email": "ajaykumarvnsgujjar@gmail.com",
+      "departmentID": "CLOUD",
+      "departmentRole": "Member",
       "currentMember": true,
-      "snsLink1ID": "sns-133",
-      "snsLink2ID": "sns-134",
-      "profPic": "https://example.com/profiles/devika.jpg",
-      "projects": [],
-      "department": {
-        "departmentID": "dept-ml",
-        "name": "Machine Learning Team"
-      }
-    },
-    {
-      "memberID": "018",
-      "name": "Rohan Desai",
-      "email": "rohan.desai@example.com",
-      "departmentID": "dept-ml",
-      "departmentRole": "co-lead",
+      "snsLink1": null,
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/24BCE7985.jpg?",
+      "regNo": "24BCE7985"
+  },
+  {
+      "memberID": "c3b3e345-e952-4f4a-bb5a-d30350afd743",
+      "name": "Pratheek R",
+      "email": "pratheek.24bcb7044@vitapstudent.ac.in",
+      "departmentID": "CLOUD",
+      "departmentRole": "Member",
       "currentMember": true,
-      "snsLink1ID": "sns-135",
-      "snsLink2ID": "sns-136",
-      "profPic": "https://example.com/profiles/rohan.jpg",
-      "projects": [],
-      "department": {
-        "departmentID": "dept-ml",
-        "name": "Machine Learning Team"
-      }
-    },
-    {
-      "memberID": "019",
-      "name": "Nandita Sen",
-      "email": "nandita.sen@example.com",
-      "departmentID": "dept-ml",
-      "departmentRole": "member",
+      "snsLink1": "https://www.linkedin.com/in/pratheek-r-432ab5249/",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/24BCB7044_.jpg?",
+      "regNo": "24BCB7044"
+  },
+  {
+      "memberID": "18578b91-32a4-4f63-a199-3f2d80028fdc",
+      "name": "Syed Muskan",
+      "email": "muskan.23bce7305@vitapstudent.ac.in",
+      "departmentID": "CLOUD",
+      "departmentRole": "Member",
       "currentMember": true,
-      "snsLink1ID": "sns-137",
-      "snsLink2ID": "sns-138",
-      "profPic": "https://example.com/profiles/nandita.jpg",
-      "projects": [],
-      "department": {
-        "departmentID": "dept-ml",
-        "name": "Machine Learning Team"
-      }
-    },
-    {
-      "memberID": "020",
-      "name": "Harshit Tiwari",
-      "email": "harshit.tiwari@example.com",
-      "departmentID": "dept-ml",
-      "departmentRole": "member",
+      "snsLink1": null,
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23BCE7305.jpg?",
+      "regNo": "23BCE7305"
+  },
+  {
+      "memberID": "d67a3204-e14a-4127-a893-0c8ff067e854",
+      "name": "V Udhayanidhi",
+      "email": "udhayanidhi.24mic7371@vitapstudent.ac.in",
+      "departmentID": "CLOUD",
+      "departmentRole": "Member",
       "currentMember": true,
-      "snsLink1ID": "sns-139",
-      "snsLink2ID": "sns-140",
-      "profPic": "https://example.com/profiles/harshit.jpg",
-      "projects": [],
-      "department": {
-        "departmentID": "dept-ml",
-        "name": "Machine Learning Team"
-      }
-    },{
-      memberID: "030",
-      name: "Zara Ali",
-      email: "zara.ali@example.com",
-      departmentID: "dept-core",
-      departmentRole: "member",
-      currentMember: true,
-      snsLink1ID: "sns-113",
-      snsLink2ID: "sns-114",
-      profPic: "https://example.com/profiles/zara.jpg",
-      projects: [],
-      department: {
-        departmentID: "dept-core",
-        name: "Core Team"
-      }
-    },
-    {
-      memberID: "031",
-      name: "Ayaan Khan",
-      email: "ayaan.khan@example.com",
-      departmentID: "dept-core",
-      departmentRole: "member",
-      currentMember: true,
-      snsLink1ID: "sns-115",
-      snsLink2ID: "sns-116",
-      profPic: "https://example.com/profiles/ayaan.jpg",
-      projects: [],
-      department: {
-        departmentID: "dept-core",
-        name: "Core Team"
-      }
-    },
-    {
-      memberID: "032",
-      name: "Fatima Noor",
-      email: "fatima.noor@example.com",
-      departmentID: "dept-core",
-      departmentRole: "member",
-      currentMember: true,
-      snsLink1ID: "sns-117",
-      snsLink2ID: "sns-118",
-      profPic: "https://example.com/profiles/fatima.jpg",
-      projects: [],
-      department: {
-        departmentID: "dept-core",
-        name: "Core Team"
-      }
-    },
-    {
-      memberID: "033",
-      name: "Ravi Verma",
-      email: "ravi.verma@example.com",
-      departmentID: "dept-core",
-      departmentRole: "member",
-      currentMember: true,
-      snsLink1ID: "sns-119",
-      snsLink2ID: "sns-120",
-      profPic: "https://example.com/profiles/ravi.jpg",
-      projects: [],
-      department: {
-        departmentID: "dept-core",
-        name: "Core Team"
-      }
-    },
-    {
-      memberID: "034",
-      name: "Priya Das",
-      email: "priya.das@example.com",
-      departmentID: "dept-core",
-      departmentRole: "member",
-      currentMember: true,
-      snsLink1ID: "sns-121",
-      snsLink2ID: "sns-122",
-      profPic: "https://example.com/profiles/priya.jpg",
-      projects: [],
-      department: {
-        departmentID: "dept-core",
-        name: "Core Team"
-      }
-    },
-    {
-      memberID: "035",
-      name: "Kabir Sen",
-      email: "kabir.sen@example.com",
-      departmentID: "dept-core",
-      departmentRole: "member",
-      currentMember: true,
-      snsLink1ID: "sns-123",
-      snsLink2ID: "sns-124",
-      profPic: "https://example.com/profiles/kabir.jpg",
-      projects: [],
-      department: {
-        departmentID: "dept-core",
-        name: "Core Team"
-      }
-    },
-    {
-      memberID: "036",
-      name: "Sneha Roy",
-      email: "sneha.roy@example.com",
-      departmentID: "dept-core",
-      departmentRole: "member",
-      currentMember: true,
-      snsLink1ID: "sns-125",
-      snsLink2ID: "sns-126",
-      profPic: "https://example.com/profiles/sneha.jpg",
-      projects: [],
-      department: {
-        departmentID: "dept-core",
-        name: "Core Team"
-      }
-    },
-    {
-      memberID: "037",
-      name: "Arjun Mehta",
-      email: "arjun.mehta@example.com",
-      departmentID: "dept-core",
-      departmentRole: "member",
-      currentMember: true,
-      snsLink1ID: "sns-127",
-      snsLink2ID: "sns-128",
-      profPic: "https://example.com/profiles/arjun.jpg",
-      projects: [],
-      department: {
-        departmentID: "dept-core",
-        name: "Core Team"
-      }
-    },
-    {
-      memberID: "038",
-      name: "Neha Singh",
-      email: "neha.singh@example.com",
-      departmentID: "dept-core",
-      departmentRole: "member",
-      currentMember: true,
-      snsLink1ID: "sns-129",
-      snsLink2ID: "sns-130",
-      profPic: "https://example.com/profiles/neha.jpg",
-      projects: [],
-      department: {
-        departmentID: "dept-core",
-        name: "Core Team"
-      }
-    },
-    {
-      memberID: "039",
-      name: "Ishaan Patel",
-      email: "ishaan.patel@example.com",
-      departmentID: "dept-core",
-      departmentRole: "member",
-      currentMember: true,
-      snsLink1ID: "sns-131",
-      snsLink2ID: "sns-132",
-      profPic: "https://example.com/profiles/ishaan.jpg",
-      projects: [],
-      department: {
-        departmentID: "dept-core",
-        name: "Core Team"
-      }
-    }
-  ]
+      "snsLink1": "https://www.linkedin.com/in/udhayanidhi-v-2744a3300/",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/24MIC7371.jpg?",
+      "regNo": "24MIC7371"
+  },
+  {
+      "memberID": "c017fef7-4719-4b80-a5d1-1db7abe9bb9d",
+      "name": "Deshamala Ezekiel paul",
+      "email": "ezekiel.24bce7281@vitapstudent.ac.in",
+      "departmentID": "CLOUD",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": "https://linkedin.com/in/ezekiel-paul-488484332",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/24BCE7281.jpg?",
+      "regNo": "24BCE7281"
+  },
+  {
+      "memberID": "1a524435-c952-4f41-95c7-1b5569081ae6",
+      "name": "Lakshya Dhawan",
+      "email": "lakshya.23bcb7019@vitapstudent.ac.in",
+      "departmentID": "CP",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": "https://www.linkedin.com/in/lakshya-dhawan-624901285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23bcb7019.jpg?",
+      "regNo": "23bcb7019"
+  },
+  {
+      "memberID": "b173f251-33ae-412f-9b97-0659704cf0b9",
+      "name": "Dhanumjay Kiran Katakam",
+      "email": "kiran.23bce9783@vitapstudent.ac.in",
+      "departmentID": "CP",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": "https://www.linkedin.com/in/kirankatakam/",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23BCE9783.jpg?",
+      "regNo": "23BCE9783"
+  },
+  {
+      "memberID": "0388a3a1-c910-4722-a6bf-0354b33e583f",
+      "name": "Nishant Sai Vemishetti",
+      "email": "nishant.22bce8006@vitapstudent.ac.in",
+      "departmentID": "CP",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": null,
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/22BCE8006.jpg?",
+      "regNo": "22BCE8006"
+  },
+  {
+      "memberID": "60a35856-cc96-44f0-9e23-8da23d33088e",
+      "name": "Raushan Shrivastwa",
+      "email": "raushan.23bce7219@vitapstudent.ac.in",
+      "departmentID": "CP",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": "https://www.linkedin.com/in/raushan-shrivastwa-319a2a232/",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23BCE7219.jpg?",
+      "regNo": "23BCE7219"
+  },
+  {
+      "memberID": "608813f6-70c8-4524-8a39-cd58e646c74f",
+      "name": "Shubhrajyoti Ghose Biswas",
+      "email": "shubhrajyoti.23bce7261@vitapstudent.ac.in",
+      "departmentID": "CP",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": "https://www.linkedin.com/in/subro-ghose-922b6626a",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23BCE7261.jpg?",
+      "regNo": "23BCE7261"
+  },
+  {
+      "memberID": "15e3a799-9df7-439d-bd34-6d36be2907ac",
+      "name": "P. Karthikeya",
+      "email": "kkarthikeya819@gmail.com",
+      "departmentID": "CP",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": "https://www.linkedin.com/in/karthikeya-patibandla-20084b2a6/",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23MIC7284_.jpg?",
+      "regNo": "23MIC7284"
+  },
+  {
+      "memberID": "8812e741-0d85-478e-8d51-a9750996f566",
+      "name": "Ankita Das",
+      "email": "ankita.24bce7793@vitapstudent.ac.in",
+      "departmentID": "DESIGN",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": "https://www.linkedin.com/in/ankita-das-780aaa319/",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/24BCE7793.jpg?",
+      "regNo": "24BCE7793"
+  },
+  {
+      "memberID": "9642f8aa-7b1e-47d3-9744-b7e49b950c75",
+      "name": "Paras Rahul Mane",
+      "email": "rahul.23bce8821@vitapstudent.ac.in",
+      "departmentID": "DESIGN",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": "https://www.linkedin.com/in/paras-mane-20b600255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23BCE8821.jpg?",
+      "regNo": "23BCE8821"
+  },
+  {
+      "memberID": "47f4f874-f06c-43d7-9ae1-9243dfa63fc9",
+      "name": "Reet Mishra",
+      "email": "reet.ritul0211@gmail.com",
+      "departmentID": "DESIGN",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": "https://www.linkedin.com/in/ciiphersiren",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23BCE8992.jpg?",
+      "regNo": "23BCE8992"
+  },
+  {
+      "memberID": "f351190b-cda5-4b46-b102-6b6500c17206",
+      "name": "Mani Shukla",
+      "email": "mani.23bce7298@vitapstudent.ac.in",
+      "departmentID": "EVENTS",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": "http://linkedin.com/in/mani-s902",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23BCE7298.jpg?",
+      "regNo": "23BCE7298"
+  },
+  {
+      "memberID": "ee692265-afd7-48ad-a3c6-9a03b5c31ee8",
+      "name": "GUBBA VENKATA SESHA SAI ADITYA PRANEETH",
+      "email": "praneeth.22bba7060@vitapstudent.ac.in",
+      "departmentID": "EVENTS",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": "https://www.linkedin.com/in/praneethgubba/",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/22BBA7060.jpg?",
+      "regNo": "22BBA7060"
+  },
+  {
+      "memberID": "c618b56f-57d8-4dfe-a318-582d559a9432",
+      "name": "Rhea K N",
+      "email": "rhea.23bce8754@vitapstudent.ac.in",
+      "departmentID": "EVENTS",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": null,
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23BCE8754.jpg?",
+      "regNo": "23BCE8754"
+  },
+  {
+      "memberID": "a54a9db4-e918-492f-8794-b6c300a89898",
+      "name": "Keerthi Reddy Kamjula",
+      "email": "keerthi.23bce7413@vitapstudent.ac.in",
+      "departmentID": "EVENTS",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": "https://www.linkedin.com/in/keerthi-reddy-kamjula-3a9a69291",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23BCE7413.jpg?",
+      "regNo": "23BCE7413"
+  },
+  {
+      "memberID": "792b6304-35ea-4449-9cd7-52057c70ee4c",
+      "name": "Shaik Rehaan Siddiq",
+      "email": "siddiq.23bce8750@vitapstudent.ac.in",
+      "departmentID": "EVENTS",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": "https://www.linkedin.com/in/rehaansiddiq",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23BCE8750.jpg?",
+      "regNo": "23BCE8750"
+  },
+  {
+      "memberID": "8f402170-540e-4ebc-b824-126fe6b772e1",
+      "name": "PRANEESH K N K",
+      "email": "praneesh.23bce8672@vitapstudent.ac.in",
+      "departmentID": "EVENTS",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": "https://www.linkedin.com/in/kolachana-praneesh-618a05291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23BCE8672.jpg?",
+      "regNo": "23BCE8672"
+  },
+  {
+      "memberID": "d6a0c1e5-942f-4cc9-81e7-9f7a841175a2",
+      "name": "Konanki Keerthi",
+      "email": "keerthi.22bce9470@vitapstudent.ac.in",
+      "departmentID": "EVENTS",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": "https://www.linkedin.com/in/konanki-keerthi-020aa1250",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/22BCE9470.jpg?",
+      "regNo": "22BCE9470"
+  },
+  {
+      "memberID": "1e585d5d-e7a9-4790-a8fe-9f5e8142896f",
+      "name": "Velaga sasank",
+      "email": "sasank.23bce8707@vitapstudent.ac.in",
+      "departmentID": "EVENTS",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": null,
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23BCE8707_.jpg?",
+      "regNo": "23BCE8707"
+  },
+  {
+      "memberID": "79267d23-ffe6-433b-a815-3b8432b76889",
+      "name": "Aditi nishita damera",
+      "email": "aditinishita.24bce7702@vitapstudent.ac.in",
+      "departmentID": "EVENTS",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": null,
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/24bce7702.jpg?",
+      "regNo": "24bce7702"
+  },
+  {
+      "memberID": "1a8dc178-df2b-452c-a1ab-4580d67d5fe9",
+      "name": "Adigopula Pardhiv",
+      "email": "pardhiv.22bce20453@vitapstudent.ac.in",
+      "departmentID": "EVENTS",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": null,
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/22BCE20453.jpg?",
+      "regNo": "22BCE20453"
+  },
+  {
+      "memberID": "b8fe6258-e810-48fe-8f4d-3a810921e3f0",
+      "name": "Sanhitha Madupalli",
+      "email": "sanhithamadupalli@gmail.com",
+      "departmentID": "EVENTS",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": null,
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23BCE7322.jpg?",
+      "regNo": "23BCE7322"
+  },
+  {
+      "memberID": "0c035a0d-7004-4c51-8397-fb571af5a2b9",
+      "name": "Rahul konagalla",
+      "email": "rahul.23bce9193@vitapstudent.ac.in",
+      "departmentID": "EVENTS",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": "https://www.linkedin.com/in/rahul-konagalla-7092a0291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23BCE9193_.jpg?",
+      "regNo": "23BCE9193"
+  },
+  {
+      "memberID": "ac09b8e6-7a47-4d7a-ad26-efe3bab58fb3",
+      "name": "Sesha Sai Sisira Burra",
+      "email": "sisira.24bce7108@vitapstudent.ac.in",
+      "departmentID": "PR",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": "https://www.linkedin.com/in/sisira-burra-b6a780281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/24bce7108.jpg?",
+      "regNo": "24bce7108"
+  },
+  {
+      "memberID": "5b34d96b-2fb6-45a0-aacf-0af66f0fb6ab",
+      "name": "Puvvada Sai Rama Krishna Chowdary",
+      "email": "ramakrishna.22bce8924@vitapstudent.ac.in",
+      "departmentID": "PR",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": "https://www.linkedin.com/in/sairamakrishna09",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/22BCE8924.jpg?",
+      "regNo": "22BCE8924"
+  },
+  {
+      "memberID": "470ff70b-4db0-46da-a50a-ac59b0cdcd9d",
+      "name": "P.Doondi Abhishek",
+      "email": "abhishek.23bce9091@vitapstudent.ac.in",
+      "departmentID": "PR",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": "https://www.linkedin.com/in/paida-abhishek-4665261bb?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23BCE9091.jpg?",
+      "regNo": "23BCE9091"
+  },
+  {
+      "memberID": "8d031994-c310-4d84-8e10-7d4256eadb0f",
+      "name": "Akash pandey",
+      "email": "akash.23bce8752@vitapstudent.ac.in",
+      "departmentID": "PR",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": "https://www.linkedin.com/in/akash-pandey-807829279",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23bce8752.jpg?",
+      "regNo": "23bce8752"
+  },
+  {
+      "memberID": "d3e6970e-498c-46d3-8a50-dd41f4f5aedf",
+      "name": "JHEEL JOHARI",
+      "email": "jheeljohari1@gmail.com",
+      "departmentID": "WEBAPP",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": "https://www.linkedin.com/in/jheel-johari-b097aa275/",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/22BCE8858.jpg?",
+      "regNo": "22BCE8858"
+  },
+  {
+      "memberID": "458aed06-2626-40ac-bd32-377146ef34c9",
+      "name": "Tanvish Reddy Sanikommu",
+      "email": "tanvish.24bce7900@vitapstudent.ac.in",
+      "departmentID": "WEBAPP",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": "https://linkedin.com/in/tanvish-reddy",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/24BCE7900.jpg?",
+      "regNo": "24BCE7900"
+  },
+  {
+      "memberID": "939da7e7-50fb-41f3-81a8-dc70a0536cc2",
+      "name": "Arpit Makkar",
+      "email": "arpit.23bce7565@vitapstudent.ac.in",
+      "departmentID": "WEBAPP",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": "https://www.linkedin.com/in/makkararpit",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23BCE7565.jpg?",
+      "regNo": "23BCE7565"
+  },
+  {
+      "memberID": "37b4783d-a799-4c44-8e73-799652f3b4b8",
+      "name": "Pranay Kamble",
+      "email": "pranay.23bce7303@vitapstudent.ac.in",
+      "departmentID": "WEBAPP",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": "https://www.linkedin.com/in/pranay-kamble/",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23BCE7303.jpg?",
+      "regNo": "23BCE7303"
+  },
+  {
+      "memberID": "d206abe8-e663-4eca-a903-f651af156384",
+      "name": "Aryan Puri",
+      "email": "aryan.23bce8560@vitapstudent.ac.in",
+      "departmentID": "WEBAPP",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": null,
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23BCE8560.jpg?",
+      "regNo": "23BCE8560"
+  },
+  {
+      "memberID": "37e99edf-55a9-478f-9512-b2a849a23fc1",
+      "name": "Rakesh Kumar Rabha",
+      "email": "rakesh.24bcc7002@vitapstudent.ac.in",
+      "departmentID": "WEBAPP",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": "https://www.linkedin.com/in/rkrabha?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/24BCC7002.jpg?",
+      "regNo": "24BCC7002"
+  },
+  {
+      "memberID": "083e3b97-f2fb-4a46-8296-111f676d2e25",
+      "name": "Vrishank Raina",
+      "email": "vrishank.23bce8373@vitapstudent.ac.in",
+      "departmentID": "WEBAPP",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": "https://www.linkedin.com/in/vrishank-raina-0719b5277/",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23BCE8373.jpg?",
+      "regNo": "23BCE8373"
+  },
+  {
+      "memberID": "fcad254c-88ab-4144-b99c-ea0d7bc4ca4b",
+      "name": "MADANU KUMAR JOSEPH SHOWRY AKHIL",
+      "email": "madanuakhil96@gmail.com",
+      "departmentID": "WEBAPP",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": null,
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23BCE9499.jpg?",
+      "regNo": "23BCE9499"
+  },
+  {
+      "memberID": "30da1ec6-6f4c-4c5a-a2af-1125ddfac84b",
+      "name": "Achyut Badyal",
+      "email": "achubadyal4@gmail.com",
+      "departmentID": "WEBAPP",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": "https://www.linkedin.com/in/achyut-badyal-06402a275/",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/22BCE7776.jpg?",
+      "regNo": "22BCE7776"
+  },
+  {
+      "memberID": "9edd88d5-8f81-4af5-8095-873e4cf76276",
+      "name": "Daksh Asati",
+      "email": "daksh.23bec7195@vitapstudent.ac.in",
+      "departmentID": "WEBAPP",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": "https://www.linkedin.com/in/dakshasati/",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23BEC7195.jpg?",
+      "regNo": "23BEC7195"
+  },
+  {
+      "memberID": "a2d5a218-22be-4642-b9d3-5d565d91ecdb",
+      "name": "SHAIK IRFAN",
+      "email": "irfan.23mic7072@vitapstudent.ac.in",
+      "departmentID": "WEBAPP",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": null,
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23MIC7072.jpg?",
+      "regNo": "23MIC7072"
+  },
+  {
+      "memberID": "9ff3e446-286d-4346-8790-131085b1d43c",
+      "name": "Sarthak Agrawal",
+      "email": "sarthak.agrawal.co@gmail.com",
+      "departmentID": "WEBAPP",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": null,
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/24BCE7304_.jpg?",
+      "regNo": "24BCE7304"
+  },
+  {
+      "memberID": "b76c2854-a4a4-48ad-8fdc-2d588f24e989",
+      "name": "Taalanki Chaitanya",
+      "email": "chaitanya.23mic7206@vitapstudent.ac.in",
+      "departmentID": "WEBAPP",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": "https://www.linkedin.com/in/taalanki-chaitanya-540791341?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23MIC7206.jpg?",
+      "regNo": "23MIC7206"
+  },
+  {
+      "memberID": "228d3326-5e02-43ef-854d-008da3d7a41a",
+      "name": "Gembali Lokesh",
+      "email": "gembali.lokesh2004@gmail.com",
+      "departmentID": "WEBAPP",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": "https://www.linkedin.com/in/lokesh-gembali-74b574305?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23BCE9813.jpg?",
+      "regNo": "23BCE9813"
+  },
+  {
+      "memberID": "f95a5f9d-a229-4b62-befd-de027ac0155b",
+      "name": "Thotapalli Koteswara Sesha Sathvik",
+      "email": "sathvik.23bce9627@vitapstudent.ac.in",
+      "departmentID": "WEBAPP",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": "https://www.linkedin.com/in/sathvik-sesha-638785291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23BCE9627.jpg?",
+      "regNo": "23BCE9627"
+  },
+  {
+      "memberID": "f01a2385-54b8-43c3-838e-b0e8defff8ab",
+      "name": "ANNAPUREDDY MONISH KUMAR REDDY",
+      "email": "monish.23bcb7151@vitapstudent.ac.in",
+      "departmentID": "WEBAPP",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": null,
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23BCB7151.jpg?",
+      "regNo": "23BCB7151"
+  },
+  {
+      "memberID": "da52006f-ffdd-48f6-86ed-b76383b918f4",
+      "name": "Golla Naga Sri Nandhan",
+      "email": "nandhan.golla.work@gmail.com",
+      "departmentID": "AIML",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": null,
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/24MIC7285.jpg?",
+      "regNo": "24MIC7285"
+  },
+  {
+      "memberID": "4894db4e-d1f1-42dc-bca3-b62eaf7bd1ab",
+      "name": "Ramsha Annam",
+      "email": "ramshaannam.annam@gmail.com",
+      "departmentID": "AIML",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": "https://www.linkedin.com/in/ramsha-annam",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23BCE8215.jpg?",
+      "regNo": "23BCE8215"
+  },
+  {
+      "memberID": "759ad12d-df0e-4dee-8b23-f05e35eff9ff",
+      "name": "Mainak Sil",
+      "email": "mainak.23bec7120@vitapstudent.ac.in",
+      "departmentID": "AIML",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": null,
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23BEC7120.jpg?",
+      "regNo": "23BEC7120"
+  },
+  {
+      "memberID": "53e66b07-39c4-4550-873a-22595f4f94fd",
+      "name": "Gavini Karthik",
+      "email": "karthik.23bce7905@vitapstudent.ac.in",
+      "departmentID": "AIML",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": "https://www.linkedin.com/in/karthik-gavini-725914335?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23BCE7905.jpg?",
+      "regNo": "23BCE7905"
+  },
+  {
+      "memberID": "e415e2ba-031a-44e0-b185-66a0399e3a02",
+      "name": "Valikala Sudesh Chandra",
+      "email": "sudesh.22bce7267@vitapstudent.ac.in",
+      "departmentID": "PR",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": "https://www.linkedin.com/in/vsudeshchandra/",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/22bce7267.jpg?",
+      "regNo": "22bce7267"
+  },
+  {
+      "memberID": "690ff903-e203-4885-bbe4-28c92d21db0a",
+      "name": "Medhangshi Das",
+      "email": "medhangshi.23bce8357@vitapstudent.ac.in",
+      "departmentID": "AIML",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": "https://www.linkedin.com/in/medhangshi-das-0092182b4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23BCE8357.jpg?",
+      "regNo": "23BCE8357"
+  },
+  {
+      "memberID": "1b38e33e-5206-4b10-a957-477f84929926",
+      "name": "Maddi Yajnavalkya N V S S",
+      "email": "yajnavalkya.23bce7243@vitapstudent.ac.in",
+      "departmentID": "CP",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": "https://www.linkedin.com/in/yajnavalkya-m-bb8921292",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23BCE7243.jpg?",
+      "regNo": "23BCE7243"
+  },
+  {
+      "memberID": "8dff6d74-4903-4844-b73c-7726f0be85c4",
+      "name": "Atharv Sudhir Wadhawane",
+      "email": "atharv.23bce8820@vitapstudent.ac.in",
+      "departmentID": "AIML",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": null,
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23BCE8820.jpg?",
+      "regNo": "23BCE8820"
+  },
+  {
+      "memberID": "b5571381-42d9-4d40-a648-1ee0038aa087",
+      "name": "Jadda Mounika Sai Sree",
+      "email": "mounika.23bce9998@vitapstudent.ac.in",
+      "departmentID": "AIML",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": "https://www.linkedin.com/in/mounika-jadda-922339293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23BCE9998.jpg?",
+      "regNo": "23BCE9998"
+  },
+  {
+      "memberID": "1dd667e8-8aa8-42f7-abc2-bd304980cf72",
+      "name": "Charu shieja maurya",
+      "email": "charu.24bce7597@vitapstudent.ac.in",
+      "departmentID": "DESIGN",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": "https://www.linkedin.com/in/charu-shieja-maurya-8460a0324",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/24bce7597.jpg?",
+      "regNo": "24bce7597"
+  },
+  {
+      "memberID": "0cb6860c-f22a-4bd0-a293-f9bd6853be88",
+      "name": "JAYA VARDHAN M",
+      "email": "jayavardhan.23bce8471@vitapstudent.ac.in",
+      "departmentID": "CP",
+      "departmentRole": "Member",
+      "currentMember": true,
+      "snsLink1": "https://www.linkedin.com/in/jaya-vardhan-mallampalli-88624a32a",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/23BCE8471.jpg?",
+      "regNo": "23BCE8471"
+  },
+  {
+      "memberID": "6ada3abe-8d8e-4855-be09-48314aa78303",
+      "name": "Ansuman Sahu",
+      "email": "ansuman.22bce7826@vitapstudent.ac.in",
+      "departmentID": "AIML",
+      "departmentRole": "Lead",
+      "currentMember": true,
+      "snsLink1": "https://www.linkedin.com/in/ansuman-sahu264/",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/22BCE7826.jpg?",
+      "regNo": "22BCE7826"
+  },
+  {
+      "memberID": "db845f13-deb7-4cac-ae45-5d8f5ca446ec",
+      "name": "DLV Sai Sameer Kumar",
+      "email": "saisameer.22bce7194@vitapstudent.ac.in",
+      "departmentID": "PR",
+      "departmentRole": "Lead",
+      "currentMember": true,
+      "snsLink1": "https://www.linkedin.com/in/sameerkumar-divi/",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/22BCE7194.jpg?",
+      "regNo": "22BCE7194"
+  },
+  {
+      "memberID": "4bfb9593-e99f-4e60-95c5-b1dd7e448441",
+      "name": "Sujal Ghonmode",
+      "email": "sujalghonmode01@gmail.com",
+      "departmentID": "EVENTS",
+      "departmentRole": "Lead",
+      "currentMember": true,
+      "snsLink1": "http://linkedin.com/in/sujalghonmode",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/22BCE7461.jpg?",
+      "regNo": "22BCE7461"
+  },
+  {
+      "memberID": "e7d49ca9-fc68-455a-b27e-a071ece7b83f",
+      "name": "Mayank Choudhary",
+      "email": "mayank.22bce7861@vitapstudent.ac.in",
+      "departmentID": "CP",
+      "departmentRole": "Lead",
+      "currentMember": true,
+      "snsLink1": "https://www.linkedin.com/in/mayank-choudhary-2b1365259/",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/22BCE7861.jpg?",
+      "regNo": "22BCE7861"
+  },
+  {
+      "memberID": "cd847384-c667-4060-bfd6-bbc41e97560b",
+      "name": "Tanneeru Yoga Venkata Nikhil",
+      "email": "venkata.22bce20372@vitapstudent.ac.in",
+      "departmentID": "CP",
+      "departmentRole": "Co Lead",
+      "currentMember": true,
+      "snsLink1": "https://www.linkedin.com/in/nikhil-tanneeru/",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/22BCE20372.jpg?",
+      "regNo": "22BCE20372"
+  },
+  {
+      "memberID": "491083e6-6248-4705-bc43-212be2e40283",
+      "name": "Kunwar Singh Bhatia",
+      "email": "kunwar1234singh1234@gmail.com",
+      "departmentID": "WEBAPP",
+      "departmentRole": "Lead",
+      "currentMember": true,
+      "snsLink1": "https://www.linkedin.com/in/kunwar-singh-bhatia-867607247/",
+      "snsLink2": null,
+      "profPic": "https://wgpmvoufejvqnaaqwtuy.supabase.co/storage/v1/object/public/team-images/uploaded_images/22BCE8568.jpg?",
+      "regNo": "22BCE8568"
+  }
+]
   
+
+  export const teamsId = {
+    'Design and Creators Team' : "DESIGN",
+    'Web and App Development Team' : "WEBAPP",
+    'Public Relations & Outreach Team' : "PR",
+    'AI/ML & Data Analytics Team' : "AIML",
+    "Competitive Programming Team" : "CP",
+    "Events Management Team" : "EVENTS",
+    "Cloud & DevOps Team" : "CLOUD"
+}

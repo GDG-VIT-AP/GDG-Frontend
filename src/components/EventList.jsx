@@ -11,43 +11,18 @@
 // import React, { useEffect, useState } from "react";
 import EventCard from "./EventCard";
 
-function EventList({ events , searchQuery }) {
-  // const [eventList, setEventList] = useState([]);
+function EventList({ events , searchQuery, type="events" }) {
 
-  // // ✅ Fetch Events from API
-  // const fetchEvents = async () => {
-  //   try {
-  //     const apiUrl = events
-  //       ? "https://backend.kunwar1234singh1234.workers.dev/api/v1/event/getPastEvents"
-  //       : "https://backend.kunwar1234singh1234.workers.dev/api/v1/event/getUpcomingEvents";
-
-  //     const response = await fetch(apiUrl, {
-  //       method: "GET",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //     });
-
-  //     const data = await response.json();
-  //     if (data.success) {
-  //       setEventList(data.data); // ✅ Store events
-  //     }
-  //   } catch (error) {
-  //     console.error("Failed to fetch events:", error);
-  //   }
-  // };
-
-  // // ✅ Fetch events when event type changes
-  // useEffect(() => {
-  //   fetchEvents();
-  // }, [events]);
-
-  // ✅ Filter events based on searchQuery
-  
   const filteredEvents = events.filter((event) =>
-    event.title.toLowerCase().includes(searchQuery.toLowerCase())
+  {
+    if(type == "projects"){
+      return event.name.toLowerCase().includes(searchQuery.toLowerCase())
+    }else{
+      return event.title.toLowerCase().includes(searchQuery.toLowerCase())
+    }
+  }
   );
-
+  console.log(filteredEvents)
   return (
     <div className="EventListContainer flex flex-col gap-6">
       {filteredEvents.length > 0 ? (

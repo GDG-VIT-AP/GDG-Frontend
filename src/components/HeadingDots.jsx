@@ -2,13 +2,13 @@
 // ---------------------------------------------------
 //contributor: G.Lokesh(23BCE9813)
 import React from 'react'
-import cloud2 from '../assets/cloud2.png';
-import cloud3 from '../assets/cloud3.png';
-import cloud from '../assets/cloud.png'; // ✅ Import the image
-import RedDot from '../assets/RedDot.png';
-import GreenDot from '../assets/GreenDot.png'
+import cloud2 from '@/assets/cloud2.png';
+import cloud3 from '@/assets/cloud3.png';
+import cloud from '@/assets/cloud.png'; // ✅ Import the image
+import RedDot from '@/assets/RedDot.png';
+import GreenDot from '@/assets/GreenDot.png'
 
- function Events() {
+ export function HeadingDots({title}) {
     const count=3;
     
   return (
@@ -21,7 +21,7 @@ import GreenDot from '../assets/GreenDot.png'
           backgroundSize: "contain", // ✅ Ensures full image is visible
           backgroundRepeat: "no-repeat" 
         }}>
-          Events
+          {title}
       </div>
       {/* Left Cloud in the page */}
       <div 
@@ -71,4 +71,3 @@ import GreenDot from '../assets/GreenDot.png'
   )
 }
 
-export default Events;

@@ -10,9 +10,9 @@ import Google_developrs_footer from "../../assets/Elements/Google_developrs_foot
 import Facebook_icon from "../../assets/Elements/Facebook_icon.svg";
 import Instagram_icon from "../../assets/Elements/Instagram_icon.svg";
 
-function Footer(props) {
+function Footer() {
   return (
-    <footer className="bg-black text-white p-5 relative h-250">
+    <footer className="bg-black text-white p-5 relative h-50">
 
       {/* Main Container */}
       <div className="flex flex-wrap justify-between items-center gap-4">

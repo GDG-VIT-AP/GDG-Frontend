@@ -7,23 +7,25 @@ import Teamicon from "../assets/Teamicon.png";
 import LeadsOfSpecilizedCards from '../AggregateComponents/LeadsOfSpecilizedCards';
 import TeamMatesCards from './TeamMatesCards';
 import AboutTeam from './AboutTeam';
-import { data } from './details';
+import { teamsId} from './details';
 
 export default function TeamCard(props) {
   // Filter data based on the selected team
-  const data1 = data;
+  const data1 = props.data;
+
   const filteredData = data1.filter(
-    (member) => member.department.name.toLowerCase() === props.displayTeam.toLowerCase()
+    (member) => member.departmentID === teamsId[props.displayTeam]
   );
   
   // Separate leads and members
   const leadsData = filteredData.filter(
-    (member) => member.departmentRole.toLowerCase() === 'lead' || member.departmentRole.toLowerCase() === 'co-lead'
+    (member) => member.departmentRole.toLowerCase() === 'lead' || member.departmentRole.toLowerCase() === 'co lead'
   );
   const membersData = filteredData.filter(
     (member) => member.departmentRole.toLowerCase() === 'member'
   );
-
+  console.log(leadsData)
+  console.log(membersData)
   return (
     <div className='w-[1170px] flex flex-col bg-[#F6F9FF] rounded-[29px] p-5 border-[#00000033] border-[1px]'>
       

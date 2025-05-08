@@ -7,15 +7,17 @@ import React, { useState } from 'react';
 
 export default function Buttons(props) {
   // Local state to track the currently selected team
-  const [active, setActive] = useState('Design Team');
+  const [active, setActive] = useState('Design and Creators Team');
 
   // List of all team names
   const teams = [
-    'Design Team',
-    'Core Team',
-    'Web Development Team',
-    'Marketing Team',
-    'Machine Learning Team'
+    'Design and Creators Team',
+    'Web and App Development Team',
+    'Public Relations & Outreach Team',
+    'AI/ML & Data Analytics Team',
+    "Competitive Programming Team",
+    "Events Management Team",
+    "Cloud & DevOps Team"
   ];
 
   return (

@@ -4,11 +4,9 @@
 // ---------------------------------------------------
 //contributor: G.Lokesh(23BCE9813)
 import React, { useEffect, useState } from "react";
-import vector from '../assets/vector.png';
-import rectangle from '../assets/Rectangle.png';
 import { NavLink } from "react-router-dom";
 
-function EventCard({ event }) {
+function ProjectCard({ project }) {
   const [_, setAnimateCount] = useState(false);
   const count = 5; // Default rating 5
 
@@ -19,10 +17,10 @@ function EventCard({ event }) {
     return () => clearTimeout(timeout); // Cleanup timeout
   }, [count]);
 
-    console.log(event);
+    console.log(project);
   return (
     <div
-      className={`EventCard flex flex-row items-center bg-[#F6F9FF] max-md:flex-col max-md:w-full max-md:items-center
+      className={`ProjectCard flex flex-row items-center bg-[#F6F9FF] max-md:flex-col max-md:w-full max-md:items-center
         p-3 rounded-2xl w-full max-w-[1087px] max-xl:w-[900px] max-lg:w-[800px] border-[2px] border-gray-300 
         transform transition-all duration-500 ease-in-out 
         animate-card-appear hover:scale-[1.02] hover:shadow-xl cursor-pointer`}
@@ -31,7 +29,7 @@ function EventCard({ event }) {
       {/* Event Image */}
       <NavLink
         className="EventImage w-[477px] h-[268px] max-xl:w-[400px] max-lg:w-[300px] rounded-2xl bg-cover bg-center"
-        style={{ backgroundImage: `url(${event.bannerUrl})` }} to={`/event/${event.eventID}`}
+        style={{ backgroundImage: `url(${project.imgURL[0]})` }} to={`/event/${project.eventID}`}
       ></NavLink>
 
       {/* Event Details */}
@@ -39,8 +37,8 @@ function EventCard({ event }) {
 
         {/* Title and Description */}
         <div className="mt-[7px]">
-          <h3 className="text-[40px] font-bold text-[#333]">{event.title}</h3>
-          <p className="text-md text-gray-600 font-sans">{event.description.substr(0,75) + "....."}</p>
+          <h3 className="text-[40px] font-bold text-[#333]">{project.name}</h3>
+          <p className="text-md text-gray-600 font-sans">{project.description.substr(0,75) + "....."}</p>
         </div>
 
         {/* Date and Time */}
@@ -49,35 +47,8 @@ function EventCard({ event }) {
           {/* Event Date and Time */}
           <div>
             <p className="font-sans font-bold text-[22px] text-gray-600">
-              📅 Date: {new Date(event.eventDate).toLocaleDateString('en-GB')}
+              📅 Live Since : {new Date(project.startDate).toLocaleDateString('en-GB')}
             </p>
-            <p className="font-sans font-bold text-[22px] text-gray-600">
-              ⏱ Time: {new Date(event.startTime).toLocaleTimeString('en-US', {
-                hour: '2-digit',
-                minute: '2-digit',
-                hour12: true
-              })}
-            </p>
-          </div>
-
-          {/* Participant Rating Stars Counter */}
-          <div className={`ParticipantRating flex flex-row gap-2 items-center bg-[#4889F4]  
-            h-[59px] rounded-full px-3 border-black border-[2px]`}
-          >
-
-            {/* Dynamic Rating Stars Icons */}
-            {Array.from({ length: Math.min(count, 5) }).map((_, index) => (
-              <img
-                key={index}
-                className="StarIcon w-[30.94px] h-[30.94px] max-xl:w-[24px] max-xl:h-[24px]"
-                src={vector}
-                alt={`Participant ${index + 1}`}
-              />
-            ))}
-
-            {/* Rating Count */}
-            <img className="RectangleBackground h-[30.94px] ml-1" src={rectangle} alt="Rectangle Background" />
-            <p className="font-inter font-bold text-[34px] text-[#FFFFFF]">{count}</p>
           </div>
         </div>
       </div>
@@ -85,4 +56,4 @@ function EventCard({ event }) {
   );
 }
 
-export default EventCard;
+export default ProjectCard;

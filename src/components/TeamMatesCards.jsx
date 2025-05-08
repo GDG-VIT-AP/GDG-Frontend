@@ -14,7 +14,7 @@ export default function TeamMatesCards({ data }) {
 
   // If `showAll` is true, display all data; otherwise, display only the first 8
   const visibleData = showAll ? data : data.slice(0, 8)
-
+  console.log(data)
   return (
     <>
       {/* Render the team member cards */}
