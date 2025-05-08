@@ -5,7 +5,7 @@
 import React from 'react';
 import ima from '../assets/image.jpg';
 import instagram from "../assets/instagramIcon.png";
-import messageicon from "../assets/Message-Icon.png";
+import messageicon from "../assets/Message-icon.png";
 
 export default function FacultyCard() {
   return (
