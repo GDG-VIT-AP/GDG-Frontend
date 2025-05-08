@@ -4,7 +4,7 @@
 // ---------------------------------------------------
 //contributor: G.Lokesh(23BCE9813)
 import React, { useEffect, useState } from "react";
-import vector from '../assets/vector.png';
+import vector from '../assets/Vector.png';
 import rectangle from '../assets/Rectangle.png';
 import { NavLink } from "react-router-dom";
 
