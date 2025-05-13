@@ -39,8 +39,9 @@ function Signup() {
     const data = await postData('auth/signup',  body);
     console.log(data)
     if (data.success) {
-      alert('Signup successful!');
-      navigate("/")
+      // alert('Signup successful!');
+      setemailSent(true);
+      // Navigate or open OTP verification
     } else {
       alert(data.message || 'Signup failed');
     }
@@ -55,10 +56,10 @@ function Signup() {
     const data = await postData('auth/signup/verified',  body);
     console.log(data)
     if (data.success) {
-      // alert('Signup successful!');
+      alert('Signup successful!');
       setemailSent(true);
       localStorage.setItem('token', data.token);
-
+      navigate("/")
       // Navigate or open OTP verification
     } else {
       alert(data.message || 'Signup failed');
