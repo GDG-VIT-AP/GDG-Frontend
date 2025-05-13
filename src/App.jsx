@@ -17,12 +17,15 @@ import HomePage from "./pages/Homepage.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import TeamsPage from "./pages/TeamsPage";
 import ProjectsPage from "./pages/ProjectsPage";
+import ScrollToTop from "./hooks/scroolToTop";
 
 function App() {
   return (
     <div className="flex flex-col min-h-screen">
       <NavBar />
+      <ScrollToTop/>
       <main className="flex-grow">
+
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/" element={<HomePage />} />

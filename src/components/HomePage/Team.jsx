@@ -16,6 +16,7 @@ import rec1 from "@/assets/rec1.svg";
 import rec2 from "@/assets/rec2.svg";
 import da from "@/assets/da.svg";
 import { transformTeamData } from "./teamutils";
+import { Link } from "react-router-dom";
 
 
 const Team = (teamsData) => {
@@ -82,9 +83,9 @@ const Team = (teamsData) => {
           </div>
         ))}
         <div className="w-full md:block text-center mt-4">
-        <a href="#" className="text-blue-500 font-medium text-md hover:text-blue-600">
-          see more
-        </a>
+  <Link to="/team" className="text-blue-500 font-medium text-md hover:text-blue-600">
+    see more
+  </Link>
       </div>
       </div>
 
