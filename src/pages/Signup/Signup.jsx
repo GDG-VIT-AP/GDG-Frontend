@@ -40,9 +40,7 @@ function Signup() {
     console.log(data)
     if (data.success) {
       alert('Signup successful!');
-      // setemailSent(true);
       navigate("/")
-      // Navigate or open OTP verification
     } else {
       alert(data.message || 'Signup failed');
     }
