@@ -25,14 +25,25 @@ function TeamsPage() {
   const [selectDepartment, onSelectDepartment] = useState("Design and Creators Team");
 
   const [teams, setTeams] = useState(data);
+const [leadData, setLead] = useState({});
+
+useEffect(() => {
+  const getTeamsData = async () => {
+    const teamData = await getData("team/user/team");
+
+    // Find the team with teamType === "ADMIN" and teamRole === "Lead"
+    const leadTeam = teamData.data.find(
+      (team) => team.departmentID === "ADMIN" && team.departmentRole === "Lead"
+    );
+    if (leadTeam) {
+      setLead(leadTeam);
+    } 
     
-  useEffect(() =>{
-    const getTeamsData = async () =>{
-      const teamData = await getData("team/user/team")
-      setTeams(teamData.data);
-    }
-    getTeamsData()
-  }, [])
+    setTeams(teamData.data)
+  };
+
+  getTeamsData();
+}, []);
   return (
     <>
       {/* Background decorative emojis */}
@@ -43,7 +54,7 @@ function TeamsPage() {
 
       {/* Main content container */}
       <div className="flex flex-col justify-center items-center gap-[60px] pb-5">
-        <HeadOfGdg /> {/* Component showing the head of GDG */}
+        <HeadOfGdg leadData={leadData}/> {/* Component showing the head of GDG */}
         <Search /> {/* Search bar component */}
         <Buttons selectTeam={onSelectDepartment} /> {/* Buttons to choose team/department */}
         <TeamCard displayTeam={selectDepartment} data={teams} /> Team cards shown based on selected department

@@ -3,10 +3,8 @@
 // It shows their photo in a gradient-bordered circle, their name, designation, and social/media contact icons.
 
 import React from 'react';
-import ima from '../assets/image.jpg';
 import instagram from "../assets/instagramIcon.png";
-import messageicon from "../assets/Message-icon.png";
-
+import ima from "@/assets/dr_deepasikha_mishra.webp"
 export default function FacultyCard() {
   return (
     <>
@@ -37,12 +35,10 @@ export default function FacultyCard() {
             
             {/* Social Icons Section */}
             <div className="flex flex-row gap-[6px]">
-              <a href="#" aria-label="Instagram">
+              <a href="https://www.linkedin.com/in/dr-deepasikha-mishra-46b478131/" aria-label="Instagram">
                 <img className="w-[46.6px] h-[46.6px]" src={instagram} alt="Instagram Icon" />
               </a>
-              <a href="mailto:StudentCordinator@gmail.com" aria-label="Email">
-                <img className="w-[46.6px] h-[46.6px]" src={messageicon} alt="Email Icon" />
-              </a>
+ 
             </div>
           </div>
         </div>

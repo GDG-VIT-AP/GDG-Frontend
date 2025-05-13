@@ -3,11 +3,10 @@
 // It includes a profile picture with a gradient border, the lead’s name, role, bio, and contact icons (Instagram and Email).
 
 import React from 'react';
-import ima from '../assets/image.jpg';
 import instagram from '../assets/instagramIcon.png';
-import Message from '../assets/Message-icon.png';
 
-export default function LeadCard() {
+export default function LeadCard({leadData}) {
+  leadData = leadData.leadData
   return (
     <>
       <div className="mainbox flex flex-row w-[558.4px] h-[171px] bg-[#EFEFEF] items-center rounded-[20px] mt-[50px] ml-[50px]">
@@ -23,14 +22,14 @@ export default function LeadCard() {
         >
           <img
             className="h-full w-full rounded-full object-cover"
-            src={ima}
+            src={leadData.profPic}
             alt="Lead Profile"
           />
         </div>
 
         {/* Lead Info Section */}
         <div className="right-section ml-5 text-black w-[400px]">
-          <h3 className="font-sans font-bold text-[29px] tracking-[0px]">MANIDEEP</h3>
+          <h3 className="font-sans font-bold text-[29px] tracking-[0px]">{leadData.name}</h3>
           <p className="font-sans font-normal text-[24px] tracking-[0px]">GDG VIT-AP Club Lead</p>
           
           {/* Bio and Contact Icons */}
@@ -38,11 +37,8 @@ export default function LeadCard() {
             <p className="w-1/2 font-sans font-normal text-[19px] tracking-[0px]">Student at VIT-AP</p>
 
             <div className="w-1/2 flex flex-row gap-[6px] mr-[-80px]">
-              <a href="#" aria-label="Instagram">
+              <a href={leadData.snsLink1} aria-label="LinkedIn">
                 <img className="w-[46.6px] h-[46.6px]" src={instagram} alt="Instagram Icon" />
-              </a>
-              <a href="mailto:lead@gmail.com" aria-label="Email">
-                <img className="w-[46.6px] h-[46.6px]" src={Message} alt="Email Icon" />
               </a>
             </div>
           </div>

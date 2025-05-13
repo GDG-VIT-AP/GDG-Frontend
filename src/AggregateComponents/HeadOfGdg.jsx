@@ -6,7 +6,8 @@ import React from 'react'
 import FacultyCard from '../components/FacultyCard'
 import LeadCard from '../components/LeadCard'
 
-export default function HeadOfGdg() {
+export default function HeadOfGdg(leadData) {
+  console.log(leadData)
   return (
     <>
       {/* Main container for the Head of GDG section */}
@@ -16,7 +17,7 @@ export default function HeadOfGdg() {
         <FacultyCard/>
 
         {/* Render Lead Card */}
-        <LeadCard/>
+        <LeadCard leadData={leadData}/>
       </div>
     </>
   )
