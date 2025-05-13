@@ -11,6 +11,7 @@ import GDGLogo from "../../Components/GDGLogo/GDGLogo.jsx";
 import DesignElements from "../../Components/DesignElements/DesignElements.jsx";
 import { checkZoom } from "../../Components/CheckZoom/CheckZoom.jsx";
 import {getData, postData} from "../../utils/api.js"
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -25,7 +26,7 @@ function Signup() {
   const [isVerified, setIsVerified] = useState(false);
   const [emailSent, setemailSent] = useState(false);
   const token = new URLSearchParams(window.location.search).get("token");
-
+  const navigate = useNavigate();
   {/* For signup Button */}
 
 
@@ -39,7 +40,8 @@ function Signup() {
     console.log(data)
     if (data.success) {
       // alert('Signup successful!');
-      setemailSent(true);
+      // setemailSent(true);
+      navigate("/")
       // Navigate or open OTP verification
     } else {
       alert(data.message || 'Signup failed');
@@ -58,6 +60,7 @@ function Signup() {
       // alert('Signup successful!');
       setemailSent(true);
       localStorage.setItem('token', data.token);
+
       // Navigate or open OTP verification
     } else {
       alert(data.message || 'Signup failed');
