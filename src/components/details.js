@@ -962,7 +962,7 @@ export const data = [
 ]
   
 
-  export const teamsId = {
+export const teamsId = {
     'Design and Creators Team' : "DESIGN",
     'Web and App Development Team' : "WEBAPP",
     'Public Relations & Outreach Team' : "PR",
@@ -971,3 +971,13 @@ export const data = [
     "Events Management Team" : "EVENTS",
     "Cloud & DevOps Team" : "CLOUD"
 }
+
+export const teamNames = {
+  DESIGN: "Design and Creators Team",
+  WEBAPP: "Web and App Development Team",
+  PR: "Public Relations & Outreach Team",
+  AIML: "AI/ML & Data Analytics Team",
+  CP: "Competitive Programming Team",
+  EVENTS: "Events Management Team",
+  CLOUD: "Cloud & DevOps Team"
+};

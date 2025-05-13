@@ -30,7 +30,6 @@ function TeamsPage() {
     const getTeamsData = async () =>{
       const teamData = await getData("team/user/team")
       setTeams(teamData.data);
-      console.log(teamData)
     }
     getTeamsData()
   }, [])

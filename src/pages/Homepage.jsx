@@ -7,15 +7,16 @@ import Hero1 from '../components/Hero1'
 import About from '../components/About'
 import Events from '../components/Events'
 import Projects from '../components/Projects_HP'
-import Team from '../components/Team'
+import Team from '../components/HomePage/Team'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 import { useEffect, useState } from 'react'
 import { getData } from '@/utils/api'
-
+import { data } from '@/components/details'
 const Homepage = () => {
 
   const [events, setEvents] = useState([]);
+  const [teams, setTeams] = useState(data);
   
   useEffect(() =>{
     const getEventsData = async () =>{
@@ -34,9 +35,19 @@ const Homepage = () => {
           eventID: event.eventID
         })) : [];
         setEvents([...upcomingEventsList, ...pastEventsList])
+
     }
     getEventsData()
   }, [])
+  useEffect(() =>{
+    const getTeams = async () =>{
+        const teamData = await getData("team/user/team")
+        console.log(teamData)
+        setTeams(teamData.data);
+    }
+    getTeams()
+  }, [])
+  console.log(teams)
   return (
     <>
       <Navbar1 />
@@ -44,7 +55,7 @@ const Homepage = () => {
       <About />
       <Events slidesData={events}/>
       <Projects />
-      <Team />
+      <Team teamsData={teams}/>
       <Contact />
       {/* <Footer /> */}
 

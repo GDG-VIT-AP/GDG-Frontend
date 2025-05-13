@@ -3,57 +3,24 @@
 
 
 import React, { useState } from "react";
-import avatar from "../assets/avatar.svg";
-import github from "../assets/github.svg";
-import linkedin from "../assets/linkedin.svg";
-import ot1 from "../assets/ot1.svg";
-import ot2 from "../assets/ot2.svg";
-import ot3 from "../assets/ot3.svg";
-import ot4 from "../assets/ot4.svg";
-import l2 from "../assets/l2.svg";
-import rb from "../assets/rb.svg";
-import bb from "../assets/bb.svg";
-import rec1 from "../assets/rec1.svg";
-import rec2 from "../assets/rec2.svg";
-import da from "../assets/da.svg";
+import avatar from "@/assets/avatar.svg";
+import linkedin from "@/assets/linkedin.svg";
+import ot1 from "@/assets/ot1.svg";
+import ot2 from "@/assets/ot2.svg";
+import ot3 from "@/assets/ot3.svg";
+import ot4 from "@/assets/ot4.svg";
+import l2 from "@/assets/l2.svg";
+import rb from "@/assets/rb.svg";
+import bb from "@/assets/bb.svg";
+import rec1 from "@/assets/rec1.svg";
+import rec2 from "@/assets/rec2.svg";
+import da from "@/assets/da.svg";
+import { transformTeamData } from "./teamutils";
 
 
-const teams = {
-  "Machine Learning Team": [
-    { name: "Alice Doe", role: "ML Engineer", img: avatar, team: "Machine Learning" },
-    { name: "Bob Smith", role: "AI Researcher", img: avatar, team: "Machine Learning" },
-    { name: "Alice Doe", role: "ML Engineer", img: avatar, team: "Machine Learning" },
-    { name: "Bob Smith", role: "AI Researcher", img: avatar, team: "Machine Learning" }
-  ],
-  "Core Team": [
-    { name: "Charlie Brown", role: "Team Lead", img: avatar, team: "Core Team" },
-    { name: "Diana Prince", role: "Project Manager", img: avatar, team: "Core Team" },
-    { name: "Charlie Brown", role: "Team Lead", img: avatar, team: "Core Team" },
-    { name: "Diana Prince", role: "Project Manager", img: avatar, team: "Core Team" }
-  ],
-  "Web Development Team": [
-    { name: "Jhon Smith", role: "Web Dev Team Leader", img: avatar, team: "Web Development" },
-    { name: "Emma Watson", role: "Frontend Engineer", img: avatar, team: "Web Development" },
-    { name: "Jhon Smith", role: "Web Dev Team Leader", img: avatar, team: "Web Development" },
-    { name: "Emma Watson", role: "Frontend Engineer", img: avatar, team: "Web Development" }
-  ],
-  "Design Team": [
-    { name: "Oliver Twist", role: "UI/UX Designer", img: avatar, team: "Design" },
-    { name: "Sophia Loren", role: "Graphic Designer", img: avatar, team: "Design" },
-    { name: "Oliver Twist", role: "UI/UX Designer", img: avatar, team: "Design" },
-    { name: "Sophia Loren", role: "Graphic Designer", img: avatar, team: "Design" }
-  ],
-  "Marketing Team": [
-    { name: "Henry Ford", role: "Marketing Strategist", img: avatar, team: "Marketing" },
-    { name: "Lisa Ray", role: "SEO Specialist", img: avatar, team: "Marketing" },
-    { name: "Henry Ford", role: "Marketing Strategist", img: avatar, team: "Marketing" },
-    { name: "Lisa Ray", role: "SEO Specialist", img: avatar, team: "Marketing" }
-  ],
-};
-
-const Team = () => {
-  const [selectedTeam, setSelectedTeam] = useState("Machine Learning Team");
-
+const Team = (teamsData) => {
+  const [selectedTeam, setSelectedTeam] = useState("AI/ML & Data Analytics Team");
+  const teams = transformTeamData(teamsData.teamsData)
   return (
     <div className="relative my-32 md:my-60 p-8">
       <h2 className="text-3xl text-black mb-8 md:mb-8 lg:mb-8 text-center font-bold">
@@ -97,21 +64,20 @@ const Team = () => {
             key={index}
             className="relative p-4 mt-10 bg-gray-100 shadow-md rounded-2xl w-48 text-center"
           >
-            <div className="rounded-full w-32 mx-auto bg-white">
+            <div className="rounded-full w-32 mx-auto bg-white" >
             <img
-              src={member.img}
+              src={member.img || avatar}
               alt={member.name}
-              className="absolute -top-16 left-1/2 transform -translate-x-1/2 rounded-full w-32 mx-auto mb-2 p-1"
+              className="absolute -top-16 left-1/2 transform -translate-x-1/2 rounded-full w-32 h-32 object-cover object-center p-1"
             />
             </div>
             <div className="mt-16">
             <h3 className="font-bold">{member.name}</h3>
             <p className="text-gray-600">{member.team}</p>
             <p className="text-gray-600">{member.role}</p>
-            <div className="flex gap-2 justify-center mt-2">
+            <a className="flex gap-2 justify-center mt-2" href={member.linkedin} >
               <img src={linkedin} alt="linkedin" className="h-8 border-2 border-black rounded-4xl cursor-pointer hover:bg-gray-300" />
-              <img src={github} alt="github" className="h-8 border-2 border-black rounded-4xl cursor-pointer hover:bg-gray-300" />
-            </div>
+            </a>
             </div>
           </div>
         ))}
