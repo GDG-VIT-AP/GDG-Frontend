@@ -39,7 +39,7 @@ function Signup() {
     const data = await postData('auth/signup',  body);
     console.log(data)
     if (data.success) {
-      // alert('Signup successful!');
+      alert('Signup successful!');
       // setemailSent(true);
       navigate("/")
       // Navigate or open OTP verification
